@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 400.0,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(200),
-                          color: Colors.amber.shade400),
+                          color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
                   Positioned(
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 300.0,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(200),
-                          color: Colors.amber.shade400),
+                          color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
                 ],
