@@ -71,9 +71,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         margin: const EdgeInsets.all(10.0),
                         alignment: Alignment.topLeft,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            image: DecorationImage(
-                                image: AssetImage('assets/chris.jpg'))),
+                          borderRadius: BorderRadius.circular(100),
+                          image: const DecorationImage(
+                            image: AssetImage('assets/chris.jpg'),
+                          ),
+                        ),
                       )
                     ],
                   )
