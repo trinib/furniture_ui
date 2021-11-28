@@ -11,7 +11,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-<<<<<<< HEAD
       debugShowCheckedModeBanner: false,
       home: MyHomePage(),
     );
@@ -69,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 50,
                         width: 50,
                         //// space around widget
-                        margin: const EdgeInsets.all(10.0),
+                        margin: const EdgeInsets.all(11.0),
                         alignment: Alignment.topLeft,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
@@ -85,20 +84,6 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           )
         ],
-=======
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.green,
->>>>>>> 45965edf27a18a50920b93792f8fe7a6bcef8366
       ),
     );
   }
