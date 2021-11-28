@@ -68,7 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         height: 50,
                         width: 50,
                         //// space around widget
-                        margin: const EdgeInsets.all(11.0),
+                        margin: const EdgeInsets.all(10.0),
                         alignment: Alignment.topLeft,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(100),
