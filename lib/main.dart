@@ -26,23 +26,25 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /// TOP WIDGET
+      /// LIST WIDGET WITH EVERYTHING INSIDE
       body: ListView(
         children: [
           Column(
             children: [
               Stack(
                 children: [
+                  //// TOP SQUARE CONTAINER
                   Container(
                     height: 250,
                     //// takes full lenght
                     width: double.infinity,
                     color: Colors.amber.shade400,
                   ),
-                  //// posti
+                  //// postition container
                   Positioned(
                     bottom: 50,
                     right: 200.0,
+                    //// CIRCLE CONTAINER
                     child: Container(
                       height: 400.0,
                       width: 400.0,
@@ -51,9 +53,11 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
+                  //// LEFT CIRCLE CONTAINER
                   Positioned(
                     bottom: 100,
                     left: 200.0,
+                    //// RIGHT CIRCLE CONTAINER
                     child: Container(
                       height: 300.0,
                       width: 300.0,
@@ -62,6 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
+                  //// column with a image in a container
                   Column(
                     children: [
                       Container(
