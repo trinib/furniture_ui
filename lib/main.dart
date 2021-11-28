@@ -35,9 +35,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: [
                   Container(
                     height: 250,
+                    //// takes full lenght
                     width: double.infinity,
-                    color: Colors.amber,
+                    color: Colors.amber.shade400,
                   ),
+                  //// posti
                   Positioned(
                     bottom: 50,
                     right: 200.0,
@@ -60,6 +62,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
+                  Column(
+                    children: [
+                      Container(
+                        height: 50,
+                        width: 50,
+                        //// space around widget
+                        margin: const EdgeInsets.all(10.0),
+                        alignment: Alignment.topLeft,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(100),
+                            image: DecorationImage(
+                                image: AssetImage('assets/chris.jpg'))),
+                      )
+                    ],
+                  )
                 ],
               )
             ],
