@@ -61,29 +61,54 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Container(
                       height: 300.0,
                       width: 300.0,
+                      //// decoration
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(200),
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
-                  //// column with a image in a container
+                  //// COLUMN
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Container(
-                        height: 50,
-                        width: 50,
-                        //// space around widget
-                        margin: const EdgeInsets.all(10.0),
-                        alignment: Alignment.topLeft,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          image: const DecorationImage(
-                            image: AssetImage('assets/chris.jpg'),
+                      SizedBox(height: 15.0),
+                      Row(
+                        children: [
+                          SizedBox(width: 15.0),
+                          Container(
+                            alignment: Alignment.topLeft,
+                            height: 50,
+                            width: 50,
+                            //// space around widget
+                            decoration: BoxDecoration(
+                              //// change container shape to round
+                              borderRadius: BorderRadius.circular(100),
+                              //// add border around circle
+                              border: Border.all(
+                                  color: Colors.pink,
+                                  style: BorderStyle.solid,
+                                  width: 2),
+                              //// image
+                              image: const DecorationImage(
+                                image: AssetImage('assets/chris.jpg'),
+                              ),
+                            ),
                           ),
-                        ),
-                      )
+                          SizedBox(
+                              width: MediaQuery.of(context).size.width - 120.0),
+                          Container(
+                            alignment: Alignment.topRight,
+                            child: IconButton(
+                              icon: Icon(Icons.menu),
+                              onPressed: () {},
+                              color: Colors.white,
+                              iconSize: 30.0,
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
-                  )
+                  ),
                 ],
               )
             ],
