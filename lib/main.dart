@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                           ),
                           SizedBox(
-                              width: MediaQuery.of(context).size.width - 120.0),
+                              width: MediaQuery.of(context).size.width - 121.0),
                           Container(
                             alignment: Alignment.topRight,
                             child: IconButton(
