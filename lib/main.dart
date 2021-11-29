@@ -71,10 +71,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(height: 15.0),
+                      const SizedBox(height: 15.0),
                       Row(
                         children: [
-                          SizedBox(width: 15.0),
+                          const SizedBox(width: 15.0),
                           Container(
                             alignment: Alignment.topLeft,
                             height: 50,
@@ -85,9 +85,10 @@ class _MyHomePageState extends State<MyHomePage> {
                               borderRadius: BorderRadius.circular(100),
                               //// add border around circle
                               border: Border.all(
-                                  color: Colors.pink,
-                                  style: BorderStyle.solid,
-                                  width: 2),
+                                color: Colors.white,
+                                style: BorderStyle.solid,
+                                width: 2,
+                              ),
                               //// image
                               image: const DecorationImage(
                                 image: AssetImage('assets/chris.jpg'),
@@ -99,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Container(
                             alignment: Alignment.topRight,
                             child: IconButton(
-                              icon: Icon(Icons.menu),
+                              icon: const Icon(Icons.menu),
                               onPressed: () {},
                               color: Colors.white,
                               iconSize: 30.0,
@@ -110,9 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     ],
                   ),
                 ],
-              )
+              ),
             ],
-          )
+          ),
         ],
       ),
     );
