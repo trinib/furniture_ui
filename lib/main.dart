@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -71,10 +73,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const SizedBox(height: 15.0),
+                      SizedBox(height: 15.0),
                       Row(
                         children: [
-                          const SizedBox(width: 15.0),
+                          SizedBox(width: 15.0),
                           Container(
                             alignment: Alignment.topLeft,
                             height: 50,
@@ -95,8 +97,9 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                           ),
+                          //// MENU ICON
                           SizedBox(
-                              width: MediaQuery.of(context).size.width - 121.0),
+                              width: MediaQuery.of(context).size.width - 120.0),
                           Container(
                             alignment: Alignment.topRight,
                             child: IconButton(
@@ -108,6 +111,31 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ],
                       ),
+                      //// TITLE
+                      SizedBox(height: 50),
+                      Padding(
+                        padding: EdgeInsets.only(left: 15),
+                        child: Text(
+                          'trinib',
+                          style: TextStyle(
+                              fontFamily: 'QuickSand',
+                              fontSize: 30,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                      //// TITLE 2
+                      SizedBox(height: 15),
+                      Padding(
+                        padding: EdgeInsets.only(left: 15),
+                        child: Text(
+                          'testing app',
+                          style: TextStyle(
+                              fontFamily: 'QuickSand',
+                              fontSize: 25,
+                              fontWeight: FontWeight.normal),
+                        ),
+                      ),
+                      //// SEARCHBOX
                     ],
                   ),
                 ],
