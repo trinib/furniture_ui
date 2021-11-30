@@ -68,14 +68,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
-
-                  ///! SECOND COLUMN
+                  ////! SECOND COLUMN
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 15.0),
-
-                      ///! ROW with circle image
+                      ////! ROW with circle image
                       Row(
                         children: [
                           SizedBox(width: 15.0),
