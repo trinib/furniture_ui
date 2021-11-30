@@ -28,9 +28,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /// LIST WIDGET WITH EVERYTHING INSIDE
+      ///! LIST WIDGET WITH EVERYTHING INSIDE
       body: ListView(
         children: [
+          ///! FIRST COLUMN
           Column(
             children: [
               Stack(
@@ -38,7 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   //// TOP SQUARE CONTAINER
                   Container(
                     height: 250,
-                    //// takes full lenght
                     width: double.infinity,
                     color: Colors.amber.shade400,
                   ),
@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Positioned(
                     bottom: 50,
                     right: 200.0,
-                    //// CIRCLE CONTAINER
+                    //// 1st circle
                     child: Container(
                       height: 400.0,
                       width: 400.0,
@@ -55,11 +55,10 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
-                  //// LEFT CIRCLE CONTAINER
+                  //// 2nd circle
                   Positioned(
                     bottom: 100,
                     left: 200.0,
-                    //// RIGHT CIRCLE CONTAINER
                     child: Container(
                       height: 300.0,
                       width: 300.0,
@@ -69,11 +68,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
-                  //// COLUMN
+
+                  ///! SECOND COLUMN
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 15.0),
+
+                      ///! ROW with circle image
                       Row(
                         children: [
                           SizedBox(width: 15.0),
@@ -136,6 +138,35 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                       //// SEARCHBOX
+                      //// adjust position
+                      SizedBox(height: 15),
+                      //// adjust size
+                      Padding(
+                        padding: EdgeInsets.only(left: 15, right: 15),
+                        child: Material(
+                          //// shadow
+                          elevation: 2,
+                          borderRadius: BorderRadius.circular(5),
+                          //// TextField
+                          child: TextField(
+                            decoration: InputDecoration(
+                                border: InputBorder.none,
+                                //// Icon
+                                prefixIcon: Icon(
+                                  Icons.search,
+                                  color: Colors.black,
+                                  size: 30,
+                                ),
+                                //// Hint text
+                                //// adjust text
+                                contentPadding:
+                                    EdgeInsets.only(left: 15, top: 15),
+                                hintText: 'Search'),
+                          ),
+                        ),
+                      ),
+                      //// create space inbetween
+                      SizedBox(height: 15),
                     ],
                   ),
                 ],
