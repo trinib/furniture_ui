@@ -73,10 +73,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 15.0),
-                      ////! ROW with circle image
+                      ////! ROW
                       Row(
                         children: [
                           SizedBox(width: 15.0),
+                          //// picture
                           Container(
                             alignment: Alignment.topLeft,
                             height: 50,
@@ -137,7 +138,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       //// SEARCHBOX
                       //// adjust position
-                      SizedBox(height: 15),
+                      SizedBox(height: 25),
                       //// adjust size
                       Padding(
                         padding: EdgeInsets.only(left: 15, right: 15),
@@ -159,7 +160,10 @@ class _MyHomePageState extends State<MyHomePage> {
                                 //// adjust text
                                 contentPadding:
                                     EdgeInsets.only(left: 15, top: 15),
-                                hintText: 'Search'),
+                                hintText: 'Search',
+                                hintStyle: TextStyle(
+                                    color: Colors.blue,
+                                    fontFamily: 'Quicksand')),
                           ),
                         ),
                       ),
