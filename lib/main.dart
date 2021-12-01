@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
             children: [
               Stack(
                 children: [
-                  //// TOP SQUARE CONTAINER
+                  ///* TOP SQUARE CONTAINER
                   Container(
                     height: 250,
                     width: double.infinity,
@@ -46,7 +46,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Positioned(
                     bottom: 50,
                     right: 200.0,
-                    //// 1st circle
+                    ////* 1st circle
                     child: Container(
                       height: 400.0,
                       width: 400.0,
@@ -55,7 +55,8 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
-                  //// 2nd circle
+
+                  ///* 2nd circle
                   Positioned(
                     bottom: 100,
                     left: 200.0,
@@ -98,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                           ),
-                          //// MENU ICON
+                          ////* MENU ICON
                           SizedBox(
                               width: MediaQuery.of(context).size.width - 120.0),
                           Container(
