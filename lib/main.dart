@@ -51,8 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: 400.0,
                       width: 400.0,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(200),
-                          color: const Color(0xffFFEDA9).withOpacity(0.2)),
+                        borderRadius: BorderRadius.circular(200),
+                        color: const Color(0xffFFEDA9).withOpacity(0.2),
+                      ),
                     ),
                   ),
                   ////* 2nd circle
@@ -64,8 +65,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 300.0,
                       //// decoration
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(200),
-                          color: const Color(0xffFFEDA9).withOpacity(0.2)),
+                        borderRadius: BorderRadius.circular(200),
+                        color: const Color(0xffFFEDA9).withOpacity(0.2),
+                      ),
                     ),
                   ),
                   ////! SECOND COLUMN
@@ -104,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Container(
                             alignment: Alignment.topRight,
                             child: IconButton(
-                              icon: const Icon(Icons.menu),
+                              icon: Icon(Icons.menu),
                               onPressed: () {},
                               color: Colors.white,
                               iconSize: 30.0,
