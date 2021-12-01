@@ -28,10 +28,10 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      ///! LIST WIDGET WITH EVERYTHING INSIDE
+      ///! LIST WIDGET
       body: ListView(
         children: [
-          ///! FIRST COLUMN
+          ///! FIRST COLUMN ///
           Column(
             children: [
               Stack(
@@ -42,21 +42,22 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: double.infinity,
                     color: Colors.amber.shade400,
                   ),
-                  //// postition container
+
+                  ///* CIRCLES
+                  //// first circle
                   Positioned(
                     bottom: 50,
                     right: 200.0,
-                    ////* 1st circle
                     child: Container(
                       height: 400.0,
                       width: 400.0,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(200),
-                          color: const Color(0xffFFEDA9).withOpacity(0.2)),
+                        borderRadius: BorderRadius.circular(200),
+                        color: const Color(0xffFFEDA9).withOpacity(0.2),
+                      ),
                     ),
                   ),
-
-                  ///* 2nd circle
+                  //// 2nd circle
                   Positioned(
                     bottom: 100,
                     left: 200.0,
@@ -65,16 +66,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: 300.0,
                       //// decoration
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(200),
-                          color: const Color(0xffFFEDA9).withOpacity(0.2)),
+                        borderRadius: BorderRadius.circular(200),
+                        color: const Color(0xffFFEDA9).withOpacity(0.2),
+                      ),
                     ),
                   ),
-                  ////! SECOND COLUMN
+
+                  ///! SECOND COLUMN ///
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 15.0),
-                      ////! ROW
+                      ////! ROW (in second column)
                       Row(
                         children: [
                           SizedBox(width: 15.0),
@@ -99,7 +102,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                           ),
-                          ////* MENU ICON
+
+                          ///* MENU ICON
                           SizedBox(
                               width: MediaQuery.of(context).size.width - 120.0),
                           Container(
@@ -113,7 +117,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ],
                       ),
-                      //// TITLE
+
+                      ///* TITLES AT TOP
+                      //// title 1
                       SizedBox(height: 50),
                       Padding(
                         padding: EdgeInsets.only(left: 15),
@@ -125,7 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      //// TITLE 2
+                      //// title 2
                       SizedBox(height: 15),
                       Padding(
                         padding: EdgeInsets.only(left: 15),
@@ -137,7 +143,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontWeight: FontWeight.normal),
                         ),
                       ),
-                      //// SEARCHBOX
+
+                      ///* SEARCHBOX
                       //// adjust position
                       SizedBox(height: 25),
                       //// adjust size
@@ -150,21 +157,21 @@ class _MyHomePageState extends State<MyHomePage> {
                           //// TextField
                           child: TextField(
                             decoration: InputDecoration(
-                                border: InputBorder.none,
-                                //// Icon
-                                prefixIcon: Icon(
-                                  Icons.search,
-                                  color: Colors.black,
-                                  size: 30,
-                                ),
-                                //// Hint text
-                                //// adjust text
-                                contentPadding:
-                                    EdgeInsets.only(left: 15, top: 15),
-                                hintText: 'Search',
-                                hintStyle: TextStyle(
-                                    color: Colors.blue,
-                                    fontFamily: 'Quicksand')),
+                              border: InputBorder.none,
+                              //// Icon
+                              prefixIcon: Icon(
+                                Icons.search,
+                                color: Colors.black,
+                                size: 30,
+                              ),
+                              //// Hint text
+                              //// adjust text
+                              contentPadding:
+                                  EdgeInsets.only(left: 15, top: 15),
+                              hintText: 'Search',
+                              hintStyle: TextStyle(
+                                  color: Colors.blue, fontFamily: 'Quicksand'),
+                            ),
                           ),
                         ),
                       ),
