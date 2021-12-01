@@ -55,8 +55,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           color: const Color(0xffFFEDA9).withOpacity(0.2)),
                     ),
                   ),
-
-                  ///* 2nd circle
+                  ////* 2nd circle
                   Positioned(
                     bottom: 100,
                     left: 200.0,
@@ -74,11 +73,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 15.0),
-                      ////! ROW
+                      ////! ROW (IN SECOND COLUMN)
                       Row(
                         children: [
                           SizedBox(width: 15.0),
-                          //// picture
+                          ////* CIRLCE IMAGE
                           Container(
                             alignment: Alignment.topLeft,
                             height: 50,
@@ -113,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ],
                       ),
-                      //// TITLE
+                      ////* TITLE
                       SizedBox(height: 50),
                       Padding(
                         padding: EdgeInsets.only(left: 15),
@@ -125,7 +124,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-                      //// TITLE 2
+                      ////* TITLE 2
                       SizedBox(height: 15),
                       Padding(
                         padding: EdgeInsets.only(left: 15),
@@ -137,34 +136,33 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontWeight: FontWeight.normal),
                         ),
                       ),
-                      //// SEARCHBOX
+                      ////* SEARCHBOX
                       //// adjust position
                       SizedBox(height: 25),
                       //// adjust size
                       Padding(
                         padding: EdgeInsets.only(left: 15, right: 15),
                         child: Material(
-                          //// shadow
-                          elevation: 2,
+                          elevation: 2, //// shadow
                           borderRadius: BorderRadius.circular(5),
-                          //// TextField
+                          ///// TextField
                           child: TextField(
                             decoration: InputDecoration(
-                                border: InputBorder.none,
-                                //// Icon
-                                prefixIcon: Icon(
-                                  Icons.search,
-                                  color: Colors.black,
-                                  size: 30,
-                                ),
-                                //// Hint text
-                                //// adjust text
-                                contentPadding:
-                                    EdgeInsets.only(left: 15, top: 15),
-                                hintText: 'Search',
-                                hintStyle: TextStyle(
-                                    color: Colors.blue,
-                                    fontFamily: 'Quicksand')),
+                              border: InputBorder.none,
+                              //// Icon
+                              prefixIcon: Icon(
+                                Icons.search,
+                                color: Colors.black,
+                                size: 30,
+                              ),
+                              ////* Hint text
+                              //// adjust text
+                              contentPadding:
+                                  EdgeInsets.only(left: 15, top: 15),
+                              hintText: 'Search',
+                              hintStyle: TextStyle(
+                                  color: Colors.blue, fontFamily: 'Quicksand'),
+                            ),
                           ),
                         ),
                       ),
