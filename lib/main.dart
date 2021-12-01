@@ -57,11 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                   ),
-<<<<<<< HEAD
                   //// 2nd circle
-=======
-                  ////* 2nd circle
->>>>>>> c102be639fa098ce4c4f01afd0ae7813e6073350
                   Positioned(
                     bottom: 100,
                     left: 200.0,
@@ -81,11 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 15.0),
-<<<<<<< HEAD
                       ////! ROW (in second column)
-=======
-                      ////! ROW (IN SECOND COLUMN)
->>>>>>> c102be639fa098ce4c4f01afd0ae7813e6073350
                       Row(
                         children: [
                           SizedBox(width: 15.0),
@@ -125,13 +117,9 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ],
                       ),
-<<<<<<< HEAD
 
                       ///* TITLES AT TOP
                       //// title 1
-=======
-                      ////* TITLE
->>>>>>> c102be639fa098ce4c4f01afd0ae7813e6073350
                       SizedBox(height: 50),
                       Padding(
                         padding: EdgeInsets.only(left: 15),
@@ -143,11 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontWeight: FontWeight.bold),
                         ),
                       ),
-<<<<<<< HEAD
                       //// title 2
-=======
-                      ////* TITLE 2
->>>>>>> c102be639fa098ce4c4f01afd0ae7813e6073350
                       SizedBox(height: 15),
                       Padding(
                         padding: EdgeInsets.only(left: 15),
@@ -159,12 +143,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               fontWeight: FontWeight.normal),
                         ),
                       ),
-<<<<<<< HEAD
 
                       ///* SEARCHBOX
-=======
-                      ////* SEARCHBOX
->>>>>>> c102be639fa098ce4c4f01afd0ae7813e6073350
                       //// adjust position
                       SizedBox(height: 25),
                       //// adjust size
@@ -183,11 +163,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 color: Colors.black,
                                 size: 30,
                               ),
-<<<<<<< HEAD
                               //// Hint text
-=======
-                              ////* Hint text
->>>>>>> c102be639fa098ce4c4f01afd0ae7813e6073350
                               //// adjust text
                               contentPadding:
                                   EdgeInsets.only(left: 15, top: 15),
