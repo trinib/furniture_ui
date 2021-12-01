@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Row(
                         children: [
                           SizedBox(width: 15.0),
-                          ////* CIRLCE IMAGE
+                          ////* ROUND IMAGE
                           Container(
                             alignment: Alignment.topLeft,
                             height: 50,
