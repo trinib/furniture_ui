@@ -197,7 +197,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.white,
                     ),
                   ),
-                  ////! ROW (in second sqaure box)
+
+                  ///! ROW (in second sqaure box)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
