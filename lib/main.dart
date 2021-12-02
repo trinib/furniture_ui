@@ -144,7 +144,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
 
-                      ///? A Mateial Widget
+                      ///? A Mateial Widget 1
                       ///* SEARCHBOX
                       //// adjust position
                       SizedBox(height: 25),
@@ -177,6 +177,32 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       //// create space inbetween
                       SizedBox(height: 15),
+                    ],
+                  ),
+                ],
+              ),
+
+              ///? A Mateial Widget 2
+              ///* SECOND SQUARE BOX
+              SizedBox(height: 10),
+              Stack(
+                children: [
+                  SizedBox(height: 1),
+                  Material(
+                    elevation: 1,
+                    child: Container(
+                      height: 75,
+                      color: Colors.white,
+                    ),
+                  ),
+                  ////! ROW
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      Container(
+                        height: 50,
+                        color: Colors.white,
+                      ),
                     ],
                   ),
                 ],
