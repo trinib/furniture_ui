@@ -80,13 +80,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       ////! ROW (in second column)
                       Row(
                         children: [
+                          //// adjust size
                           SizedBox(width: 15.0),
                           ////* ROUND IMAGE
                           Container(
                             alignment: Alignment.topLeft,
                             height: 50,
                             width: 50,
-                            //// space around widget
                             decoration: BoxDecoration(
                               //// change container shape to round
                               borderRadius: BorderRadius.circular(100),
@@ -104,6 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
 
                           ///* MENU ICON
+                          //// adjust size
                           SizedBox(
                               width: MediaQuery.of(context).size.width - 120.0),
                           Container(
@@ -121,6 +122,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ///* TITLES AT TOP
                       //// title 1
                       SizedBox(height: 50),
+                      //// adjust space around
                       Padding(
                         padding: EdgeInsets.only(left: 15),
                         child: Text(
@@ -133,6 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       //// title 2
                       SizedBox(height: 15),
+                      //// adjust space around
                       Padding(
                         padding: EdgeInsets.only(left: 15),
                         child: Text(
@@ -146,9 +149,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
                       ///? A Mateial Widget 1
                       ///* SEARCHBOX
-                      //// adjust position
-                      SizedBox(height: 25),
                       //// adjust size
+                      SizedBox(height: 25),
+                      //// adjust space around
                       Padding(
                         padding: EdgeInsets.only(left: 15, right: 15),
                         child: Material(
@@ -182,9 +185,10 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
 
+              ///! SECOND STACK
               ///? A Mateial Widget 2
               ///* SECOND SQUARE BOX
-              //// adjust position
+              //// adjust size
               SizedBox(height: 10),
               Stack(
                 children: [
@@ -198,7 +202,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
 
-                  ///! ROW (in second sqaure box)
+                  ///! ROW (in second sqaure box/stack)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
