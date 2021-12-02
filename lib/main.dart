@@ -184,9 +184,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ///? A Mateial Widget 2
               ///* SECOND SQUARE BOX
+              //// adjust position
               SizedBox(height: 10),
               Stack(
                 children: [
+                  //// create space inbetween
                   SizedBox(height: 1),
                   Material(
                     elevation: 1,
@@ -195,7 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       color: Colors.white,
                     ),
                   ),
-                  ////! ROW
+                  ////! ROW (in second sqaure box)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
