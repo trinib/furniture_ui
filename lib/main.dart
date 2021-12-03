@@ -75,7 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
 
-                  ///! SECOND COLUMN ///
+                  ///! SECOND COLUMN (in first stack) ///
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -204,16 +204,18 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
 
-                  ///! ROW nested in second sqaure box/stack
+                  ///! ROW nested in second sqaure box/stack(white box container)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      //// background box
                       Container(
                         height: 75,
                         color: Colors.blue,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! COLUMN nested in CONTAINER
+                        ///! COLUMN nested in CONTAINER(background box)
+                        ////* SOFAS
                         child: Column(
                           children: [
                             Container(
@@ -229,12 +231,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           ],
                         ),
                       ),
+                      //// background box
                       Container(
                         height: 75,
                         color: Colors.blue,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! COLUMN nested in CONTAINER
+                        ///! COLUMN nested in CONTAINER(background box)
+                        ////* DESKS
                         child: Column(
                           children: [
                             Container(
@@ -244,39 +248,44 @@ class _MyHomePageState extends State<MyHomePage> {
                                       image: AssetImage('assets/desks.png'))),
                             ),
                             Text(
-                              'Sofa',
+                              'Desks',
                               style: TextStyle(fontFamily: 'Quicksand'),
                             ),
                           ],
                         ),
                       ),
+                      //// background box
                       Container(
                         height: 75,
                         color: Colors.blue,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! COLUMN nested in CONTAINER
+                        ///! COLUMN nested in CONTAINER(background box)
+                        ////* WAREDROBE
                         child: Column(
                           children: [
                             Container(
                               height: 50,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/desks.png'))),
+                                      image:
+                                          AssetImage('assets/wardrobe.png'))),
                             ),
                             Text(
-                              'Sofa',
+                              'Waredrobe',
                               style: TextStyle(fontFamily: 'Quicksand'),
                             ),
                           ],
                         ),
                       ),
+                      //// background box
                       Container(
                         height: 75,
                         color: Colors.blue,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! COLUMN nested in CONTAINER
+                        ///! COLUMN nested in CONTAINER(background box)
+                        ////* DRESSER
                         child: Column(
                           children: [
                             Container(
@@ -287,7 +296,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                           AssetImage('assets/dressers.png'))),
                             ),
                             Text(
-                              'Sofa',
+                              'Dressser',
                               style: TextStyle(fontFamily: 'Quicksand'),
                             ),
                           ],
