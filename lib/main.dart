@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      ///! LIST WIDGET
+      ///! LIST WIDGET ///
       body: ListView(
         children: [
           ///! FIRST COLUMN ///
@@ -188,7 +188,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ///! SECOND STACK ///
               ///? A Mateial Widget 2
-              ///* SECOND SQUARE BOX
+              ///* SECOND SQUARE BOX (white box container)
               //// adjust size
               SizedBox(height: 10),
               Stack(
@@ -197,6 +197,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(height: 1),
                   Material(
                     elevation: 1,
+                    //// rectangle white box container
                     child: Container(
                       height: 75,
                       color: Colors.white,
@@ -209,10 +210,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     children: [
                       Container(
                         height: 75,
-                        color: Colors.white,
+                        color: Colors.blue,
                         width: MediaQuery.of(context).size.width / 4,
+
+                        ///! COLUMN nested in CONTAINER
                         child: Column(
-                          ///! COLUMN nested in row
                           children: [
                             Container(
                               height: 50,
@@ -220,7 +222,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                   image: DecorationImage(
                                       image: AssetImage('assets/sofas.png'))),
                             ),
-                            ////Text Sofa
                             Text(
                               'Sofa',
                               style: TextStyle(fontFamily: 'Quicksand'),
@@ -230,18 +231,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                         height: 75,
-                        color: Colors.white,
+                        color: Colors.blue,
                         width: MediaQuery.of(context).size.width / 4,
+
+                        ///! COLUMN nested in CONTAINER
                         child: Column(
-                          ///! COLUMN nested in row
                           children: [
                             Container(
                               height: 50,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/sofas.png'))),
+                                      image: AssetImage('assets/desks.png'))),
                             ),
-                            ////Text Sofa
                             Text(
                               'Sofa',
                               style: TextStyle(fontFamily: 'Quicksand'),
@@ -251,18 +252,18 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                         height: 75,
-                        color: Colors.white,
+                        color: Colors.blue,
                         width: MediaQuery.of(context).size.width / 4,
+
+                        ///! COLUMN nested in CONTAINER
                         child: Column(
-                          ///! COLUMN nested in row
                           children: [
                             Container(
                               height: 50,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/sofas.png'))),
+                                      image: AssetImage('assets/desks.png'))),
                             ),
-                            ////Text Sofa
                             Text(
                               'Sofa',
                               style: TextStyle(fontFamily: 'Quicksand'),
@@ -272,18 +273,19 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                       Container(
                         height: 75,
-                        color: Colors.white,
+                        color: Colors.blue,
                         width: MediaQuery.of(context).size.width / 4,
+
+                        ///! COLUMN nested in CONTAINER
                         child: Column(
-                          ///! COLUMN nested in row
                           children: [
                             Container(
                               height: 50,
                               decoration: BoxDecoration(
                                   image: DecorationImage(
-                                      image: AssetImage('assets/sofas.png'))),
+                                      image:
+                                          AssetImage('assets/dressers.png'))),
                             ),
-                            ////Text Sofa
                             Text(
                               'Sofa',
                               style: TextStyle(fontFamily: 'Quicksand'),
