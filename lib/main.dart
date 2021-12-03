@@ -312,4 +312,26 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
+  Widget itemCard(String title, String imgPath, bool isFavorite) {
+    return Padding(
+      padding: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
+      child: Container(
+        height: 150.0,
+        width: double.infinity,
+        color: Colors.white,
+        child: Row(
+          children: [
+            Container(
+              width: 140.0,
+              height: 150.0,
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage(imgPath), fit: BoxFit.cover)),
+            )
+          ],
+        ),
+      ),
+    );
+  }
 }
