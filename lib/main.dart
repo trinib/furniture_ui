@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -34,6 +36,7 @@ class _MyHomePageState extends State<MyHomePage> {
           ///! FIRST COLUMN ///
           Column(
             children: [
+              ///! FIRST STACK ///
               Stack(
                 children: [
                   ///* TOP SQUARE CONTAINER
@@ -77,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 15.0),
-                      ////! ROW (in second column)
+                      ////! ROW nested in second column
                       Row(
                         children: [
                           //// adjust size
@@ -88,19 +91,17 @@ class _MyHomePageState extends State<MyHomePage> {
                             height: 50,
                             width: 50,
                             decoration: BoxDecoration(
-                              //// change container shape to round
-                              borderRadius: BorderRadius.circular(100),
-                              //// add border around circle
-                              border: Border.all(
-                                color: Colors.white,
-                                style: BorderStyle.solid,
-                                width: 2,
-                              ),
-                              //// image
-                              image: const DecorationImage(
-                                image: AssetImage('assets/chris.jpg'),
-                              ),
-                            ),
+                                //// change container shape to round
+                                borderRadius: BorderRadius.circular(100),
+                                //// add border around circle
+                                border: Border.all(
+                                  color: Colors.white,
+                                  style: BorderStyle.solid,
+                                  width: 2,
+                                ),
+                                //// image
+                                image: const DecorationImage(
+                                    image: AssetImage('assets/chris.jpg'))),
                           ),
 
                           ///* MENU ICON
@@ -185,7 +186,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
 
-              ///! SECOND STACK
+              ///! SECOND STACK ///
               ///? A Mateial Widget 2
               ///* SECOND SQUARE BOX
               //// adjust size
@@ -202,13 +203,93 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
 
-                  ///! ROW (in second sqaure box/stack)
+                  ///! ROW nested in second sqaure box/stack
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Container(
-                        height: 50,
+                        height: 75,
                         color: Colors.white,
+                        width: MediaQuery.of(context).size.width / 4,
+                        child: Column(
+                          ///! COLUMN nested in row
+                          children: [
+                            Container(
+                              height: 50,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage('assets/sofas.png'))),
+                            ),
+                            ////Text Sofa
+                            Text(
+                              'Sofa',
+                              style: TextStyle(fontFamily: 'Quicksand'),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 75,
+                        color: Colors.white,
+                        width: MediaQuery.of(context).size.width / 4,
+                        child: Column(
+                          ///! COLUMN nested in row
+                          children: [
+                            Container(
+                              height: 50,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage('assets/sofas.png'))),
+                            ),
+                            ////Text Sofa
+                            Text(
+                              'Sofa',
+                              style: TextStyle(fontFamily: 'Quicksand'),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 75,
+                        color: Colors.white,
+                        width: MediaQuery.of(context).size.width / 4,
+                        child: Column(
+                          ///! COLUMN nested in row
+                          children: [
+                            Container(
+                              height: 50,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage('assets/sofas.png'))),
+                            ),
+                            ////Text Sofa
+                            Text(
+                              'Sofa',
+                              style: TextStyle(fontFamily: 'Quicksand'),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 75,
+                        color: Colors.white,
+                        width: MediaQuery.of(context).size.width / 4,
+                        child: Column(
+                          ///! COLUMN nested in row
+                          children: [
+                            Container(
+                              height: 50,
+                              decoration: BoxDecoration(
+                                  image: DecorationImage(
+                                      image: AssetImage('assets/sofas.png'))),
+                            ),
+                            ////Text Sofa
+                            Text(
+                              'Sofa',
+                              style: TextStyle(fontFamily: 'Quicksand'),
+                            ),
+                          ],
+                        ),
                       ),
                     ],
                   ),
