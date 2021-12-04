@@ -26,7 +26,23 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage>
+    with SingleTickerProviderStateMixin {
+  late TabController controller;
+
+  @override
+  void initState() {
+    super.initState();
+    controller = TabController(length: 4, vsync: this);
+  }
+
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -313,6 +329,19 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ],
       ),
+      bottomNavigationBar: Material(
+        color: Colors.white,
+        child: TabBar(
+          controller: controller,
+          indicatorColor: Colors.yellow,
+          tabs: <Widget>[
+            Tab(icon: Icon(Icons.event_seat, color: Colors.yellow)),
+            Tab(icon: Icon(Icons.timer, color: Colors.grey)),
+            Tab(icon: Icon(Icons.shopping_cart, color: Colors.grey)),
+            Tab(icon: Icon(Icons.person_outline, color: Colors.grey))
+          ],
+        ),
+      ),
     );
   }
 
@@ -384,7 +413,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ],
                 ),
 
-                ///back in column
+                ///back in nested column
                 SizedBox(height: 5.0),
                 SizedBox(
                   width: 175.0,
