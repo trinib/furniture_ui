@@ -30,7 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      ///! LIST WIDGET ///
+      ///+ LIST WIDGET ///
       body: ListView(
         children: [
           ///! FIRST COLUMN ///
@@ -319,7 +319,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  ///! A CUSTOM FUNCTION TO CREATE 'ITEM CARD DESIGNS' TO BE 'CALLED' AND DISPLAYED (not visible if not called)
+  ///+ A CUSTOM FUNCTION TO CREATE 'ITEM CARD DESIGNS' TO BE 'CALLED' AND DISPLAYED (not visible if not called)
   ////? PASSING UNVALUED PARAMETERS TITLE/IMAGE/BOOL (a easy way to assign stuff to the build of the itemCard function)
   itemCard(String title, String imgPath, bool isFavorite) {
     return Padding(
@@ -330,6 +330,7 @@ class _MyHomePageState extends State<MyHomePage> {
           color: Colors.white,
           child: Row(
             children: [
+              ////* IMAGE
               Container(
                 width: 140.0,
                 height: 150.0,
@@ -340,6 +341,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       fit: BoxFit.cover),
                 ),
               ),
+              ///// space
               SizedBox(width: 40.0),
               Column(children: [
                 Row(
