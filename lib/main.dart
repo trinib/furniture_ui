@@ -320,7 +320,7 @@ class _MyHomePageState extends State<MyHomePage>
                 ],
               ),
 
-              ///! 'CALLING' THE 'ITEM CARD FUNCTION' WITH ITS PARAMETERS, TO DISPLAY
+              ///+ 'CALLING' THE 'ITEM CARD FUNCTION' WITH ITS PARAMETERS, TO DISPLAY
               //// each line created is passing values to the itemCard function's 'parameters' that will call and display the whole 'ITEM CARD WIDGET DESIGN' one by one
               itemCard('FinnNavian', 'assets/ottoman.jpg', false),
               itemCard('FinnNavian', 'assets/anotherchair.jpg', true),
@@ -329,12 +329,15 @@ class _MyHomePageState extends State<MyHomePage>
           ),
         ],
       ),
+
+      ///* BOTTOM NAVIGATION BAR
       bottomNavigationBar: Material(
+        elevation: 15,
         color: Colors.white,
         child: TabBar(
           controller: controller,
           indicatorColor: Colors.yellow,
-          tabs: <Widget>[
+          tabs: const <Widget>[
             Tab(icon: Icon(Icons.event_seat, color: Colors.yellow)),
             Tab(icon: Icon(Icons.timer, color: Colors.grey)),
             Tab(icon: Icon(Icons.shopping_cart, color: Colors.grey)),
