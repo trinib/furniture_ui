@@ -331,7 +331,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       image: AssetImage(imgPath), fit: BoxFit.cover)),
             ),
             SizedBox(
-              width: 4,
+              width: 3,
             )
           ],
         ),
