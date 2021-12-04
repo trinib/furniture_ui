@@ -321,7 +321,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   ///! A CUSTOM FUNCTION TO CREATE 'ITEM CARD DESIGNS' TO BE 'CALLED' AND DISPLAYED (not visible if not called)
   ////? PASSING UNVALUED PARAMETERS TITLE/IMAGE/BOOL (a easy way to assign stuff to the build of the itemCard function)
-  Widget itemCard(String title, String imgPath, bool isFavorite) {
+  itemCard(String title, String imgPath, bool isFavorite) {
     return Padding(
         padding: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
         child: Container(
