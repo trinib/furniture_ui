@@ -306,7 +306,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
-              itemCard('Trinib', 'assets/ottoman.jpg', false)
+
+              itemCard('Trinib', 'assets/ottoman.jpg', false),
+              itemCard('FinnNavian', 'assets/anotherchair.jpg', true),
+              itemCard('FinnNavian', 'assets/chair.jpg', true)
             ],
           ),
         ],
@@ -314,28 +317,39 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
+  ///! A FUNCTION
   Widget itemCard(String title, String imgPath, bool isFavorite) {
     return Padding(
-      padding: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
-      child: Container(
-        height: 150.0,
-        width: double.infinity,
-        color: Colors.grey,
-        child: Row(
-          children: [
-            Container(
-              width: 140.0,
-              height: 150.0,
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage(imgPath), fit: BoxFit.cover)),
-            ),
-            SizedBox(
-              width: 3,
-            )
-          ],
-        ),
-      ),
-    );
+        padding: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
+        child: Container(
+          height: 150.0,
+          width: double.infinity,
+          color: Colors.grey,
+          child: Row(
+            children: [
+              Container(
+                width: 140.0,
+                height: 150.0,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage(imgPath), fit: BoxFit.cover)),
+              ),
+              SizedBox(width: 3),
+              Column(children: <Widget>[
+                Row(
+                  children: <Widget>[
+                    Text(
+                      title,
+                      style: TextStyle(
+                          fontFamily: 'Quicksand',
+                          fontSize: 17.0,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ]),
+            ],
+          ),
+        ));
   }
 }
