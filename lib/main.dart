@@ -306,6 +306,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ],
               ),
+              itemCard('Trinib', 'assets/ottoman.jpg', false)
             ],
           ),
         ],
@@ -319,7 +320,7 @@ class _MyHomePageState extends State<MyHomePage> {
       child: Container(
         height: 150.0,
         width: double.infinity,
-        color: Colors.white,
+        color: Colors.grey,
         child: Row(
           children: [
             Container(
@@ -328,6 +329,9 @@ class _MyHomePageState extends State<MyHomePage> {
               decoration: BoxDecoration(
                   image: DecorationImage(
                       image: AssetImage(imgPath), fit: BoxFit.cover)),
+            ),
+            SizedBox(
+              width: 4,
             )
           ],
         ),
