@@ -45,8 +45,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     width: double.infinity,
                     color: Colors.amber.shade400,
                   ),
-
-                  ///* CIRCLES
+                  ////* CIRCLES
                   //// first circle
                   Positioned(
                     bottom: 50,
@@ -80,12 +79,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       SizedBox(height: 15.0),
-                      ////! ROW nested in second column
+                      ////! ROW (nest in second column)
                       Row(
                         children: [
                           //// adjust size
                           SizedBox(width: 15.0),
-                          ////* ROUND IMAGE
+                          ////* PIC IMAGE
                           Container(
                             alignment: Alignment.topLeft,
                             height: 50,
@@ -103,8 +102,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 image: const DecorationImage(
                                     image: AssetImage('assets/chris.jpg'))),
                           ),
-
-                          ///* MENU ICON
+                          ////* MENU ICON
                           //// adjust size
                           SizedBox(
                               width: MediaQuery.of(context).size.width - 120.0),
@@ -119,8 +117,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ],
                       ),
-
-                      ///* TITLES AT TOP
+                      ////* TITLES AT TOP
                       //// title 1
                       SizedBox(height: 50),
                       //// adjust space around
@@ -174,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   EdgeInsets.only(left: 15, top: 15),
                               hintText: 'Search',
                               hintStyle: TextStyle(
-                                  color: Colors.blue, fontFamily: 'Quicksand'),
+                                  color: Colors.white, fontFamily: 'Quicksand'),
                             ),
                           ),
                         ),
@@ -211,7 +208,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       //// background box
                       Container(
                         height: 75,
-                        color: Colors.blue,
+                        color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
                         ///! COLUMN nested in CONTAINER(background box)
@@ -234,7 +231,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       //// background box
                       Container(
                         height: 75,
-                        color: Colors.blue,
+                        color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
                         ///! COLUMN nested in CONTAINER(background box)
@@ -257,7 +254,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       //// background box
                       Container(
                         height: 75,
-                        color: Colors.blue,
+                        color: Colors.amber,
                         width: MediaQuery.of(context).size.width / 4,
 
                         ///! COLUMN nested in CONTAINER(background box)
@@ -281,7 +278,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       //// background box
                       Container(
                         height: 75,
-                        color: Colors.blue,
+                        color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
                         ///! COLUMN nested in CONTAINER(background box)
@@ -323,29 +320,36 @@ class _MyHomePageState extends State<MyHomePage> {
   ////? PASSING UNVALUED PARAMETERS TITLE/IMAGE/BOOL (a easy way to assign stuff to the build of the itemCard function)
   itemCard(String title, String imgPath, bool isFavorite) {
     return Padding(
-        padding: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
-        child: Container(
-          height: 150.0,
-          width: double.infinity,
-          color: Colors.white,
-          child: Row(
-            children: [
-              ////* IMAGE
-              Container(
-                width: 140.0,
-                height: 150.0,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                      //// imgPath (one of the unvalued parameter passed here)
-                      image: AssetImage(imgPath),
-                      fit: BoxFit.cover),
-                ),
+      padding: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
+      ////* WHITE BOX
+      child: Container(
+        height: 150.0,
+        width: double.infinity,
+        color: Colors.white,
+        ////! ROW (in whitebox)
+        child: Row(
+          children: [
+            ////* IMAGE
+            Container(
+              width: 140.0,
+              height: 150.0,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    //// imgPath (one of the unvalued parameter passed here)
+                    image: AssetImage(imgPath),
+                    fit: BoxFit.cover),
               ),
-              ///// space
-              SizedBox(width: 40.0),
-              Column(children: [
+            ),
+            ///// space
+            SizedBox(width: 40.0),
+
+            ///! COLUMN (nest in row)
+            Column(
+              children: [
+                ////! FIRST ROW (nest in nested column)
                 Row(
                   children: [
+                    ///* TITLE
                     Text(
                       title,
                       style: TextStyle(
@@ -353,18 +357,23 @@ class _MyHomePageState extends State<MyHomePage> {
                           fontSize: 22.0,
                           fontWeight: FontWeight.bold),
                     ),
+                    ////space
                     SizedBox(width: 100.0),
+                    ////* CIRCLE FRAME
                     Material(
-                      elevation: isFavorite ? 0.0 : 2.0,
+                      //// shadow
+                      elevation: isFavorite ? 0.0 : 8.0,
                       borderRadius: BorderRadius.circular(20),
                       child: Container(
                         height: 40,
                         width: 40,
+                        ////frame
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(15),
                             color: isFavorite
                                 ? Colors.grey.withOpacity(0.2)
                                 : Colors.white),
+                        ////* HEART ICON
                         child: Center(
                           child: isFavorite
                               ? Icon(Icons.favorite_border)
@@ -374,9 +383,64 @@ class _MyHomePageState extends State<MyHomePage> {
                     )
                   ],
                 ),
-              ]),
-            ],
-          ),
-        ));
+
+                ///back in column
+                SizedBox(height: 5.0),
+                SizedBox(
+                  width: 175.0,
+                  child: Text(
+                    'Scandinavian small sized double sofa imported full leather / Dale Italia oil wax leather black',
+                    textAlign: TextAlign.left,
+                    style: TextStyle(
+                        fontFamily: 'Quicksand',
+                        color: Colors.grey,
+                        fontSize: 12.0),
+                  ),
+                ),
+                ////space
+                SizedBox(height: 15.0),
+
+                ///! SECOND ROW(nest in nested column)
+                Row(
+                  children: <Widget>[
+                    SizedBox(width: 35.0),
+                    ////* PRICE
+                    Container(
+                      height: 40.0,
+                      width: 50.0,
+                      color: Colors.amber,
+                      child: Center(
+                        child: Text(
+                          '\$248',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Quicksand',
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                    ////* ADDTOCART
+                    Container(
+                      height: 40.0,
+                      width: 100.0,
+                      color: Colors.amber.shade300,
+                      child: Center(
+                        child: Text(
+                          'Add to cart',
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'Quicksand',
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }
