@@ -332,11 +332,12 @@ class _MyHomePageState extends State<MyHomePage>
 
       ///* BOTTOM NAVIGATION BAR
       bottomNavigationBar: Material(
-        elevation: 15,
+        elevation: 30,
         color: Colors.white,
         child: TabBar(
+          indicatorWeight: 5,
           controller: controller,
-          indicatorColor: Colors.yellow,
+          indicatorColor: Colors.amber,
           tabs: const <Widget>[
             Tab(icon: Icon(Icons.event_seat, color: Colors.yellow)),
             Tab(icon: Icon(Icons.timer, color: Colors.grey)),
