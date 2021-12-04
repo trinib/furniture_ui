@@ -309,7 +309,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ///! 'CALLING' THE 'ITEM CARD FUNCTION' WITH ITS PARAMETERS, TO DISPLAY
               //// each line created is passing values to the itemCard function's 'parameters' that will call and display the whole 'ITEM CARD WIDGET DESIGN' one by one
-              itemCard('Trinib', 'assets/ottoman.jpg', false),
+              itemCard('FinnNavian', 'assets/ottoman.jpg', false),
               itemCard('FinnNavian', 'assets/anotherchair.jpg', true),
               itemCard('FinnNavian', 'assets/chair.jpg', true)
             ],
@@ -327,29 +327,49 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Container(
           height: 150.0,
           width: double.infinity,
-          color: Colors.grey,
+          color: Colors.white,
           child: Row(
             children: [
               Container(
                 width: 140.0,
                 height: 150.0,
                 decoration: BoxDecoration(
-                    image: DecorationImage(
-                        //// imgPath (one of the unvalued parameter passed here)
-                        image: AssetImage(imgPath),
-                        fit: BoxFit.cover)),
+                  image: DecorationImage(
+                      //// imgPath (one of the unvalued parameter passed here)
+                      image: AssetImage(imgPath),
+                      fit: BoxFit.cover),
+                ),
               ),
-              SizedBox(width: 3),
-              Column(children: <Widget>[
+              SizedBox(width: 40.0),
+              Column(children: [
                 Row(
-                  children: <Widget>[
+                  children: [
                     Text(
                       title,
                       style: TextStyle(
                           fontFamily: 'Quicksand',
-                          fontSize: 17.0,
+                          fontSize: 22.0,
                           fontWeight: FontWeight.bold),
                     ),
+                    SizedBox(width: 100.0),
+                    Material(
+                      elevation: isFavorite ? 0.0 : 2.0,
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                        height: 40,
+                        width: 40,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),
+                            color: isFavorite
+                                ? Colors.grey.withOpacity(0.2)
+                                : Colors.white),
+                        child: Center(
+                          child: isFavorite
+                              ? Icon(Icons.favorite_border)
+                              : Icon(Icons.favorite, color: Colors.red),
+                        ),
+                      ),
+                    )
                   ],
                 ),
               ]),
