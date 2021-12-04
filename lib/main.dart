@@ -307,6 +307,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
 
+              ///! 'CALLING' THE 'ITEM CARD FUNCTION' WITH ITS PARAMETERS, TO DISPLAY
+              //// each line created is passing values to the itemCard function's 'parameters' that will call and display the whole 'ITEM CARD WIDGET DESIGN' one by one
               itemCard('Trinib', 'assets/ottoman.jpg', false),
               itemCard('FinnNavian', 'assets/anotherchair.jpg', true),
               itemCard('FinnNavian', 'assets/chair.jpg', true)
@@ -317,7 +319,8 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 
-  ///! A FUNCTION
+  ///! A CUSTOM FUNCTION TO CREATE 'ITEM CARD DESIGNS' TO BE 'CALLED' AND DISPLAYED (not visible if not called)
+  ////? PASSING UNVALUED PARAMETERS TITLE/IMAGE/BOOL (a easy way to assign stuff to the build of the itemCard function)
   Widget itemCard(String title, String imgPath, bool isFavorite) {
     return Padding(
         padding: EdgeInsets.only(left: 15, right: 15, top: 15, bottom: 15),
@@ -332,7 +335,9 @@ class _MyHomePageState extends State<MyHomePage> {
                 height: 150.0,
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage(imgPath), fit: BoxFit.cover)),
+                        //// imgPath (one of the unvalued parameter passed here)
+                        image: AssetImage(imgPath),
+                        fit: BoxFit.cover)),
               ),
               SizedBox(width: 3),
               Column(children: <Widget>[
