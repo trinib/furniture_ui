@@ -28,18 +28,20 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage>
     with SingleTickerProviderStateMixin {
-  late TabController controller;
+  //// create controller for bottom navigation
+  late TabController bcontroller;
 
   @override
   void initState() {
     super.initState();
-    controller = TabController(length: 4, vsync: this);
+    //// amount of icons
+    bcontroller = TabController(length: 4, vsync: this);
   }
 
   @override
   void dispose() {
     ////implement dispose
-    controller.dispose();
+    bcontroller.dispose();
     super.dispose();
   }
 
@@ -336,7 +338,7 @@ class _MyHomePageState extends State<MyHomePage>
         color: Colors.white,
         child: TabBar(
           indicatorWeight: 5,
-          controller: controller,
+          controller: bcontroller,
           indicatorColor: Colors.amber,
           tabs: const <Widget>[
             Tab(icon: Icon(Icons.event_seat, color: Colors.yellow)),
@@ -435,7 +437,7 @@ class _MyHomePageState extends State<MyHomePage>
 
                 ///! SECOND ROW(nest in nested column)
                 Row(
-                  children: <Widget>[
+                  children: [
                     SizedBox(width: 35.0),
                     ////* PRICE
                     Container(
