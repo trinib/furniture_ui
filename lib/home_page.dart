@@ -7,7 +7,7 @@ class HomePage extends StatefulWidget {
   _HomePageState createState() => _HomePageState();
 }
 
-//// need to add 'with SingleTickerProviderStateMixin' for TAB navigation bar
+//// need to add 'with SingleTickerProviderStateMixin' for TAB navigation
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
   ////? a 'TAB' CONTROLLER (for bottom navigation bar) ////
@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage>
   @override
   void initState() {
     super.initState();
-    //// amount of icons
+    //// amount of icons to show
     bcontroller = TabController(length: 4, vsync: this);
   }
 
