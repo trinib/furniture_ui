@@ -380,6 +380,8 @@ class _HomePageState extends State<HomePage>
                     ////* CIRCLE FRAME
                     Material(
                       //// shadow
+                      //// isFavourite (one of the unvalued parameter passed here)
+                      ///// if true (?) else false (:)
                       elevation: isFavorite ? 0.0 : 8.0,
                       borderRadius: BorderRadius.circular(20),
                       child: Container(
@@ -393,6 +395,8 @@ class _HomePageState extends State<HomePage>
                                 : Colors.white),
                         ////* HEART ICON
                         child: Center(
+                          //// isFavourite (one of the unvalued parameter passed here)
+                          ///// if true (?) else false (:)
                           child: isFavorite
                               ? Icon(Icons.favorite_border)
                               : Icon(Icons.favorite, color: Colors.red),
@@ -402,7 +406,7 @@ class _HomePageState extends State<HomePage>
                   ],
                 ),
 
-                ///back in nested column
+                ///! back in nested column
                 SizedBox(height: 5.0),
                 SizedBox(
                   width: 175.0,
