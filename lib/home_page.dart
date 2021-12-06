@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 //// need to add 'with SingleTickerProviderStateMixin' for TAB navigation bar
 class _HomePageState extends State<HomePage>
     with SingleTickerProviderStateMixin {
-  ///? A 'TAB' CONTROLLER (for bottom navigation bar)
+  ////? a 'TAB' CONTROLLER (for bottom navigation bar) ////
   late TabController bcontroller;
 
   @override
