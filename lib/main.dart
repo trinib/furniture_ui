@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 
-import '/home_page.dart';
+import '/stat_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       ////+ Calling home_page.dart file
-      home: HomePage(),
+      home: StatScreen(),
     );
   }
 }
