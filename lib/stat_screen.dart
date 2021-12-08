@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -13,16 +15,16 @@ class _StatScreenState extends State<StatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        children: [
+        children: <Widget>[
           Stack(
-            children: [
+            children: <Widget>[
               Container(
                 height: 300,
                 width: double.infinity,
                 color: Colors.amber.shade400,
               ),
               Row(
-                children: [
+                children: <Widget>[
                   Container(
                     margin: EdgeInsets.only(top: 20, left: 20),
                     alignment: Alignment.topLeft,
@@ -39,23 +41,59 @@ class _StatScreenState extends State<StatScreen> {
                       ),
                     ),
                   ),
-                  Column(
-                    // ignore: prefer_const_literals_to_create_immutables
-                    children: [
-                      SizedBox(height: 15),
-                      Padding(
-                        padding: EdgeInsets.only(left: 30),
-                        child: Text('hi'),
-                      ),
-                      SizedBox(height: 15),
-                      Padding(
-                        padding: EdgeInsets.only(left: 30, top: 10),
-                        child: Text('hi'),
+                  Row(
+                    children: <Widget>[
+                      Column(
+                        // ignore: prefer_const_literals_to_create_immutables
+                        children: <Widget>[
+                          SizedBox(height: 15),
+                          Padding(
+                            padding: EdgeInsets.only(left: 10),
+                            child: Text(
+                              'Brandon',
+                              style: TextStyle(
+                                  fontSize: 60, fontWeight: FontWeight.bold),
+                            ),
+                          ),
+                        ],
                       ),
                     ],
                   ),
                 ],
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  // ignore: prefer_const_literals_to_create_immutables
+                  children: <Widget>[
+                    Icon(
+                      Icons.settings,
+                      color: Colors.white,
+                      size: 40,
+                    )
+                  ],
+                ),
+              ),
+              Row(
+                children: <Widget>[
+                  Column(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    children: <Widget>[
+                      SizedBox(height: 15),
+                      Padding(
+                        padding: EdgeInsets.only(left: 130, top: 90),
+                        child: Text(
+                          '1234',
+                          style: TextStyle(
+                            fontSize: 20,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
             ],
           )
         ],

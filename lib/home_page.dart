@@ -36,10 +36,10 @@ class _HomePageState extends State<HomePage>
         children: [
           ///! FIRST COLUMN ///
           Column(
-            children: [
+            children: <Widget>[
               ///! FIRST STACK ///
               Stack(
-                children: [
+                children: <Widget>[
                   ///* TOP SQUARE CONTAINER
                   Container(
                     height: 250,
@@ -78,11 +78,11 @@ class _HomePageState extends State<HomePage>
                   ///! SECOND COLUMN (in first stack) ///
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
+                    children: <Widget>[
                       SizedBox(height: 15.0),
                       ////! ROW (nest in second column)
                       Row(
-                        children: [
+                        children: <Widget>[
                           //// adjust size
                           SizedBox(width: 15.0),
                           ////* PIC IMAGE
@@ -190,7 +190,7 @@ class _HomePageState extends State<HomePage>
               //// adjust size
               SizedBox(height: 10),
               Stack(
-                children: [
+                children: <Widget>[
                   //// create space inbetween
                   SizedBox(height: 1),
                   Material(
@@ -215,7 +215,7 @@ class _HomePageState extends State<HomePage>
                         ///! COLUMN nested in CONTAINER(background box)
                         ////* SOFAS
                         child: Column(
-                          children: [
+                          children: <Widget>[
                             Container(
                               height: 50,
                               decoration: BoxDecoration(
@@ -238,7 +238,7 @@ class _HomePageState extends State<HomePage>
                         ///! COLUMN nested in CONTAINER(background box)
                         ////* DESKS
                         child: Column(
-                          children: [
+                          children: <Widget>[
                             Container(
                               height: 50,
                               decoration: BoxDecoration(
@@ -261,7 +261,7 @@ class _HomePageState extends State<HomePage>
                         ///! COLUMN nested in CONTAINER(background box)
                         ////* WAREDROBE
                         child: Column(
-                          children: [
+                          children: <Widget>[
                             Container(
                               height: 50,
                               decoration: BoxDecoration(
@@ -285,7 +285,7 @@ class _HomePageState extends State<HomePage>
                         ///! COLUMN nested in CONTAINER(background box)
                         ////* DRESSER
                         child: Column(
-                          children: [
+                          children: <Widget>[
                             Container(
                               height: 50,
                               decoration: BoxDecoration(
@@ -346,7 +346,7 @@ class _HomePageState extends State<HomePage>
         color: Colors.white,
         ////! ROW (in whitebox)
         child: Row(
-          children: [
+          children: <Widget>[
             ////* IMAGE
             Container(
               width: 140.0,
@@ -363,10 +363,10 @@ class _HomePageState extends State<HomePage>
 
             ///! COLUMN (nest in row)
             Column(
-              children: [
+              children: <Widget>[
                 ////! FIRST ROW (nest in nested column)
                 Row(
-                  children: [
+                  children: <Widget>[
                     ///* TITLE
                     Text(
                       title,
@@ -424,7 +424,7 @@ class _HomePageState extends State<HomePage>
 
                 ///! SECOND ROW(nest in nested column)
                 Row(
-                  children: [
+                  children: <Widget>[
                     SizedBox(width: 35.0),
                     ////* PRICE
                     Container(
