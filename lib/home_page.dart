@@ -34,10 +34,10 @@ class _HomePageState extends State<HomePage>
       ///+ LIST WIDGET ///
       body: ListView(
         children: [
-          ///! FIRST COLUMN ///
+          ///! 🟩
           Column(
             children: <Widget>[
-              ///! FIRST STACK ///
+              ///! 🟩🟡
               Stack(
                 children: <Widget>[
                   ///* TOP SQUARE CONTAINER
@@ -75,12 +75,12 @@ class _HomePageState extends State<HomePage>
                     ),
                   ),
 
-                  ///! SECOND COLUMN (in first stack) ///
+                  ///! 🟩🟡🟩
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       SizedBox(height: 15.0),
-                      ////! ROW (nest in second column)
+                      ////! 🟩🟡🟩🟥
                       Row(
                         children: <Widget>[
                           //// adjust size
@@ -118,6 +118,8 @@ class _HomePageState extends State<HomePage>
                           ),
                         ],
                       ),
+
+                      ///// 🟩🟡🟩
                       ////* TITLES AT TOP
                       //// title 1
                       SizedBox(height: 50),
@@ -146,6 +148,7 @@ class _HomePageState extends State<HomePage>
                         ),
                       ),
 
+                      ///// 🟩🟡🟩
                       ///? A Mateial Widget 1
                       ///* SEARCHBOX
                       //// adjust size
@@ -184,11 +187,11 @@ class _HomePageState extends State<HomePage>
                 ],
               ),
 
-              ///! SECOND STACK ///
               ///? A Mateial Widget 2
               ///* SECOND SQUARE BOX (white box container)
               //// adjust size
               SizedBox(height: 10),
+              ////! 🟡🟡
               Stack(
                 children: <Widget>[
                   //// create space inbetween
@@ -202,17 +205,17 @@ class _HomePageState extends State<HomePage>
                     ),
                   ),
 
-                  ///! ROW nested in second sqaure box/stack(white box container)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
+                      ///! 🟡🟡🟥
                       //// background box
                       Container(
                         height: 75,
                         color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! COLUMN nested in CONTAINER(background box)
+                        ///! 🟡🟡🟥🟩
                         ////* SOFAS
                         child: Column(
                           children: <Widget>[
@@ -229,13 +232,15 @@ class _HomePageState extends State<HomePage>
                           ],
                         ),
                       ),
+
+                      ///! 🟡🟡🟥
                       //// background box
                       Container(
                         height: 75,
                         color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! COLUMN nested in CONTAINER(background box)
+                        ///! 🟡🟡🟥🟩
                         ////* DESKS
                         child: Column(
                           children: <Widget>[
@@ -252,13 +257,15 @@ class _HomePageState extends State<HomePage>
                           ],
                         ),
                       ),
+
+                      ///! 🟡🟡🟥
                       //// background box
                       Container(
                         height: 75,
                         color: Colors.amber,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! COLUMN nested in CONTAINER(background box)
+                        ///! 🟡🟡🟥🟩
                         ////* WAREDROBE
                         child: Column(
                           children: <Widget>[
@@ -276,13 +283,15 @@ class _HomePageState extends State<HomePage>
                           ],
                         ),
                       ),
+
+                      ///! 🟡🟡🟥
                       //// background box
                       Container(
                         height: 75,
                         color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! COLUMN nested in CONTAINER(background box)
+                        ///! 🟡🟡🟥🟩
                         ////* DRESSER
                         child: Column(
                           children: <Widget>[
