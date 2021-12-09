@@ -31,17 +31,17 @@ class _HomePageState extends State<HomePage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      ///+ 🟧 LIST WIDGET ///
+      ///+ 🔶 LIST WIDGET ///
       body: ListView(
         children: [
-          ///! 🟧🟩
+          ///! 🔶🟩
           Column(
             children: <Widget>[
-              ///! 🟧🟩🟡
+              ///! 🔶🟩🟡
               Stack(
                 children: <Widget>[
                   ///* TOP SQUARE CONTAINER
-                  //// 🟧🟩🟡🟦
+                  //// 🔶🟩🟡🟦
                   Container(
                     height: 250,
                     width: double.infinity,
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage>
                   Positioned(
                     bottom: 50,
                     right: 200.0,
-                    //// 🟧🟩🟡🟦
+                    //// 🔶🟩🟡🟦
                     child: Container(
                       height: 400.0,
                       width: 400.0,
@@ -66,7 +66,7 @@ class _HomePageState extends State<HomePage>
                   Positioned(
                     bottom: 100,
                     left: 200.0,
-                    //// 🟧🟩🟡🟦
+                    //// 🔶🟩🟡🟦
                     child: Container(
                       height: 300.0,
                       width: 300.0,
@@ -78,18 +78,18 @@ class _HomePageState extends State<HomePage>
                     ),
                   ),
 
-                  ///! 🟧🟩🟡🟩
+                  ///! 🔶🟩🟡🟩
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       SizedBox(height: 15.0),
-                      ////! 🟧🟩🟡🟩🟥
+                      ////! 🔶🟩🟡🟩🟥
                       Row(
                         children: <Widget>[
                           //// adjust size
                           SizedBox(width: 15.0),
                           ////* PIC IMAGE
-                          //// 🟧🟩🟡🟩🟥🟦
+                          //// 🔶🟩🟡🟩🟥🟦
                           Container(
                             alignment: Alignment.topLeft,
                             height: 50,
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage>
                           //// adjust size
                           SizedBox(
                               width: MediaQuery.of(context).size.width - 120.0),
-                          //// 🟧🟩🟡🟩🟥🟦
+                          //// 🔶🟩🟡🟩🟥🟦
                           Container(
                             alignment: Alignment.topRight,
                             child: IconButton(
@@ -124,7 +124,7 @@ class _HomePageState extends State<HomePage>
                         ],
                       ),
 
-                      ///// 🟧🟩🟡🟩
+                      ///// 🔶🟩🟡🟩
                       ////* TITLES AT TOP
                       //// title 1
                       SizedBox(height: 50),
@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage>
                         ),
                       ),
 
-                      ///// 🟧🟩🟡🟩
+                      ///// 🔶🟩🟡🟩
                       ///? A Mateial Widget 1
                       ///* SEARCHBOX
                       //// adjust size
@@ -196,14 +196,14 @@ class _HomePageState extends State<HomePage>
               ///* SECOND SQUARE BOX (white box container)
               //// adjust size
               SizedBox(height: 10),
-              ////! 🟧🟡🟡
+              ////! 🔶🟡🟡
               Stack(
                 children: <Widget>[
                   //// create space inbetween
                   SizedBox(height: 1),
                   Material(
                     elevation: 1,
-                    //// 🟧🟡🟡🟦 rectangle white box container
+                    //// 🔶🟡🟡🟦 rectangle white box container
                     child: Container(
                       height: 75,
                       color: Colors.white,
@@ -213,14 +213,14 @@ class _HomePageState extends State<HomePage>
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      ///! 🟧🟡🟡🟥🟦
+                      ///! 🔶🟡🟡🟥🟦
                       //// background box
                       Container(
                         height: 75,
                         color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! 🟧🟡🟡🟥🟦🟩🟦
+                        ///! 🔶🟡🟡🟥🟦🟩🟦
                         ////* SOFAS
                         child: Column(
                           children: <Widget>[
@@ -238,14 +238,14 @@ class _HomePageState extends State<HomePage>
                         ),
                       ),
 
-                      ///! 🟧🟡🟡🟥🟦
+                      ///! 🔶🟡🟡🟥🟦
                       //// background box
                       Container(
                         height: 75,
                         color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! 🟧🟡🟡🟥🟦🟩🟦
+                        ///! 🔶🟡🟡🟥🟦🟩🟦
                         ////* DESKS
                         child: Column(
                           children: <Widget>[
@@ -263,14 +263,14 @@ class _HomePageState extends State<HomePage>
                         ),
                       ),
 
-                      ///! 🟧🟡🟡🟥🟦
+                      ///! 🔶🟡🟡🟥🟦
                       //// background box
                       Container(
                         height: 75,
                         color: Colors.amber,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! 🟧🟡🟡🟥🟦🟩🟦
+                        ///! 🔶🟡🟡🟥🟦🟩🟦
                         ////* WAREDROBE
                         child: Column(
                           children: <Widget>[
@@ -289,14 +289,14 @@ class _HomePageState extends State<HomePage>
                         ),
                       ),
 
-                      ///! 🟧🟡🟡🟥🟦
+                      ///! 🔶🟡🟡🟥🟦
                       //// background box
                       Container(
                         height: 75,
                         color: Colors.white,
                         width: MediaQuery.of(context).size.width / 4,
 
-                        ///! 🟧🟡🟡🟥🟦🟩🟦
+                        ///! 🔶🟡🟡🟥🟦🟩🟦
                         ////* DRESSER
                         child: Column(
                           children: <Widget>[
@@ -319,7 +319,7 @@ class _HomePageState extends State<HomePage>
                 ],
               ),
 
-              /// 🟧🟩
+              /// 🔶🟩
               ///+ 'CALLING' THE 'ITEM CARD FUNCTION' WITH ITS PARAMETERS, TO DISPLAY
               //// each line created is passing values to the itemCard function's 'parameters' that will call and display the whole 'ITEM CARD WIDGET DESIGN' one by one
               itemCard('FinnNavian', 'assets/ottoman.jpg', false),
