@@ -35,7 +35,7 @@ class _StatScreenState extends State<StatScreen>
 
   @override
   void initState() {
-    //// mplement initState
+    //// Implement initState
     super.initState();
     controller = TabController(length: 4, vsync: this);
   }
@@ -51,13 +51,18 @@ class _StatScreenState extends State<StatScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: <Widget>[
+        ///! 🔶🟩
         Column(children: <Widget>[
+          ///! 🔶🟩🟡 💙
           Stack(children: <Widget>[
+            ///* TOP BOX
             Container(
               height: 250.0,
               width: double.infinity,
               color: Color(getColorHexFromStr('#FDD148')),
             ),
+            ////* CIRCLES
+            //// first 🔶🟩🟡 💙💙
             Positioned(
               bottom: 250.0,
               right: 100.0,
@@ -73,6 +78,7 @@ class _StatScreenState extends State<StatScreen>
             Positioned(
               bottom: 300.0,
               left: 150.0,
+              //// second 🔶🟩🟡 💙💙
               child: Container(
                   height: 300.0,
                   width: 300.0,
@@ -81,13 +87,18 @@ class _StatScreenState extends State<StatScreen>
                       color: Color(getColorHexFromStr('#FEE16D'))
                           .withOpacity(0.5))),
             ),
+
+            ///! 🔶🟩🟡 🟩
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 SizedBox(height: 15.0),
+
+                ///! 🔶🟩🟡 🟩🟥
                 Row(
                   children: <Widget>[
                     SizedBox(width: 15.0),
+                    //// 🔶🟩🟡 🟩🟥 💙
                     Container(
                       alignment: Alignment.topLeft,
                       height: 75.0,
@@ -102,6 +113,8 @@ class _StatScreenState extends State<StatScreen>
                               image: AssetImage('assets/chris.jpg'))),
                     ),
                     SizedBox(width: 10.0),
+
+                    ///! 🔶🟩🟡 🟩🟥 🟩
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
@@ -122,6 +135,7 @@ class _StatScreenState extends State<StatScreen>
                       ],
                     ),
                     SizedBox(width: MediaQuery.of(context).size.width - 225.0),
+                    //// 🔶🟩🟡 🟩🟥 💙
                     Container(
                       alignment: Alignment.topRight,
                       child: IconButton(
@@ -135,9 +149,12 @@ class _StatScreenState extends State<StatScreen>
                   ],
                 ),
                 SizedBox(height: 10.0),
+
+                ///! 🔶🟩🟡 🟩 🟥
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
+                    ///! 🔶🟩🟡 🟩🟥 🟩
                     Column(
                       children: <Widget>[
                         IconButton(
@@ -156,6 +173,8 @@ class _StatScreenState extends State<StatScreen>
                         )
                       ],
                     ),
+
+                    ///! 🔶🟩🟡 🟩🟥 🟩
                     Column(
                       children: <Widget>[
                         IconButton(
@@ -174,6 +193,8 @@ class _StatScreenState extends State<StatScreen>
                         )
                       ],
                     ),
+
+                    ///! 🔶🟩🟡 🟩🟥 🟩
                     Column(
                       children: <Widget>[
                         IconButton(
@@ -192,6 +213,8 @@ class _StatScreenState extends State<StatScreen>
                         )
                       ],
                     ),
+
+                    ///! 🔶🟩🟡 🟩🟥 🟩
                     Column(
                       children: <Widget>[
                         IconButton(
@@ -212,9 +235,13 @@ class _StatScreenState extends State<StatScreen>
                     )
                   ],
                 ),
+
                 SizedBox(height: 25.0),
+
+                ///! 🔶🟩🟡 🟩
                 Column(
                   children: <Widget>[
+                    ///! 🔶🟩🟡 🟩🟥
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
@@ -223,6 +250,8 @@ class _StatScreenState extends State<StatScreen>
                       ],
                     ),
                     SizedBox(height: 10.0),
+
+                    ///! 🔶🟩🟡 🟩🟥
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
@@ -235,8 +264,11 @@ class _StatScreenState extends State<StatScreen>
                   ],
                 )
               ],
-            )
+            ),
           ]),
+
+          ///! 🔶🟩
+          ////* CALLING ITEM LIST FUNCTION
           SizedBox(height: 15.0),
           listItem('Gift card', Colors.red, Icons.account_box),
           listItem('Bank card', Color(getColorHexFromStr('#E89300')),
@@ -248,6 +280,8 @@ class _StatScreenState extends State<StatScreen>
               Icons.person)
         ])
       ]),
+
+      ///* BOTTOM NAVIGATION BAR (in scafoold widget)
       bottomNavigationBar: Material(
         color: Colors.white,
         child: TabBar(
