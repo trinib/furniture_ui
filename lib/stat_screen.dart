@@ -99,6 +99,7 @@ class _StatScreenState extends State<StatScreen>
                   children: <Widget>[
                     SizedBox(width: 15.0),
                     //// 🔶🟩🟡 🟩🟥 💙
+                    ////* PROFILE IMAGE
                     Container(
                       alignment: Alignment.topLeft,
                       height: 75.0,
@@ -118,6 +119,7 @@ class _StatScreenState extends State<StatScreen>
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
+                        ////* TEXTS
                         Text(
                           'Pino',
                           style: TextStyle(
@@ -136,6 +138,7 @@ class _StatScreenState extends State<StatScreen>
                     ),
                     SizedBox(width: MediaQuery.of(context).size.width - 225.0),
                     //// 🔶🟩🟡 🟩🟥 💙
+                    ////* SETTINGS ICON
                     Container(
                       alignment: Alignment.topRight,
                       child: IconButton(
@@ -151,6 +154,7 @@ class _StatScreenState extends State<StatScreen>
                 SizedBox(height: 10.0),
 
                 ///! 🔶🟩🟡 🟩 🟥
+                ////* ICONS/BUTTONS
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
@@ -163,6 +167,7 @@ class _StatScreenState extends State<StatScreen>
                           iconSize: 40.0,
                           onPressed: () {},
                         ),
+                        ////* NAME
                         Text(
                           'Favorites',
                           style: TextStyle(
@@ -183,6 +188,7 @@ class _StatScreenState extends State<StatScreen>
                           iconSize: 40.0,
                           onPressed: () {},
                         ),
+                        ////* NAME
                         Text(
                           'Wallet',
                           style: TextStyle(
@@ -203,6 +209,7 @@ class _StatScreenState extends State<StatScreen>
                           iconSize: 40.0,
                           onPressed: () {},
                         ),
+                        ////* NAME
                         Text(
                           'Footprint',
                           style: TextStyle(
@@ -223,6 +230,7 @@ class _StatScreenState extends State<StatScreen>
                           iconSize: 40.0,
                           onPressed: () {},
                         ),
+                        ////* NAME
                         Text(
                           'Coupon',
                           style: TextStyle(
@@ -239,9 +247,11 @@ class _StatScreenState extends State<StatScreen>
                 SizedBox(height: 25.0),
 
                 ///! 🔶🟩🟡 🟩
+                ////* CARDS
                 Column(
                   children: <Widget>[
                     ///! 🔶🟩🟡 🟩🟥
+                    //// fist 2 cards
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
@@ -252,6 +262,7 @@ class _StatScreenState extends State<StatScreen>
                     SizedBox(height: 10.0),
 
                     ///! 🔶🟩🟡 🟩🟥
+                    //// second 2 cards
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
@@ -268,7 +279,7 @@ class _StatScreenState extends State<StatScreen>
           ]),
 
           ///! 🔶🟩
-          ////* CALLING ITEM LIST FUNCTION
+          ////+ CALLING ITEM LIST FUNCTION
           SizedBox(height: 15.0),
           listItem('Gift card', Colors.red, Icons.account_box),
           listItem('Bank card', Color(getColorHexFromStr('#E89300')),
@@ -281,7 +292,7 @@ class _StatScreenState extends State<StatScreen>
         ])
       ]),
 
-      ///* BOTTOM NAVIGATION BAR (in scafoold widget)
+      ///? BOTTOM NAVIGATION BAR (in scafold widget)
       bottomNavigationBar: Material(
         color: Colors.white,
         child: TabBar(
@@ -299,6 +310,7 @@ class _StatScreenState extends State<StatScreen>
     );
   }
 
+  ///+ A CUSTOM FUNCTION TO CREATE 'LIST DESIGNS' TO BE 'CALLED' AND DISPLAYED (not visible if not called) ///
   Widget listItem(String title, Color buttonColor, iconButton) {
     return Padding(
       padding: EdgeInsets.all(10.0),
@@ -335,6 +347,7 @@ class _StatScreenState extends State<StatScreen>
     );
   }
 
+  ///+ A CUSTOM FUNCTION TO CREATE 'CARD DESIGNS' TO BE 'CALLED' AND DISPLAYED (not visible if not called) ///
   Widget cardDetails(String title, String imgPath, String valueCount) {
     return Material(
       elevation: 4.0,

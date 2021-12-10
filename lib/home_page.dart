@@ -333,7 +333,7 @@ class _HomePageState extends State<HomePage>
         ],
       ),
 
-      ///* BOTTOM NAVIGATION BAR (in scafoold widget)
+      ///? BOTTOM NAVIGATION BAR (in scafoold widget)
       bottomNavigationBar: Material(
         elevation: 30,
         color: Colors.white,
