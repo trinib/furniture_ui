@@ -7,10 +7,7 @@ class StatScreen extends StatefulWidget {
   _StatScreenState createState() => _StatScreenState();
 }
 
-class _StatScreenState extends State<StatScreen>
-    with SingleTickerProviderStateMixin {
-  late TabController controller;
-
+class _StatScreenState extends State<StatScreen> {
   int getColorHexFromStr(String colorStr) {
     colorStr = "FF" + colorStr;
     colorStr = colorStr.replaceAll("#", "");
@@ -31,20 +28,6 @@ class _StatScreenState extends State<StatScreen>
       }
     }
     return val;
-  }
-
-  @override
-  void initState() {
-    //// Implement initState
-    super.initState();
-    controller = TabController(length: 4, vsync: this);
-  }
-
-  @override
-  void dispose() {
-    //// implement dispose
-    controller.dispose();
-    super.dispose();
   }
 
   @override
@@ -291,22 +274,6 @@ class _StatScreenState extends State<StatScreen>
               Icons.person)
         ])
       ]),
-
-      ///? BOTTOM NAVIGATION BAR (in scafold widget)
-      bottomNavigationBar: Material(
-        color: Colors.white,
-        child: TabBar(
-          controller: controller,
-          indicatorColor: Colors.yellow,
-          // ignore: prefer_const_literals_to_create_immutables
-          tabs: <Widget>[
-            Tab(icon: Icon(Icons.event_seat, color: Colors.grey)),
-            Tab(icon: Icon(Icons.timer, color: Colors.grey)),
-            Tab(icon: Icon(Icons.shopping_cart, color: Colors.grey)),
-            Tab(icon: Icon(Icons.person_outline, color: Colors.yellow))
-          ],
-        ),
-      ),
     );
   }
 
@@ -314,8 +281,11 @@ class _StatScreenState extends State<StatScreen>
   Widget listItem(String title, Color buttonColor, iconButton) {
     return Padding(
       padding: EdgeInsets.all(10.0),
+
+      ///! 🟥
       child: Row(
         children: <Widget>[
+          ///! 🟥💙
           Container(
             height: 50.0,
             width: 50.0,
@@ -327,6 +297,8 @@ class _StatScreenState extends State<StatScreen>
           SizedBox(width: 25.0),
           SizedBox(
             width: MediaQuery.of(context).size.width - 100.0,
+
+            ///! 🟥
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -352,11 +324,15 @@ class _StatScreenState extends State<StatScreen>
     return Material(
       elevation: 4.0,
       borderRadius: BorderRadius.circular(7.0),
+
+      ///! 💙
       child: Container(
         height: 125.0,
         width: (MediaQuery.of(context).size.width / 2) - 20.0,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(7.0), color: Colors.white),
+
+        ///! 💙🟩
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[

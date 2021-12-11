@@ -8,25 +8,8 @@ class HomePage extends StatefulWidget {
 }
 
 //// need to add 'with SingleTickerProviderStateMixin' for TAB navigation
-class _HomePageState extends State<HomePage>
-    with SingleTickerProviderStateMixin {
+class _HomePageState extends State<HomePage> {
   ////? a 'TAB' CONTROLLER (for bottom navigation bar) ////
-  late TabController bcontroller;
-
-  @override
-  void initState() {
-    super.initState();
-    //// amount of icons to show
-    bcontroller = TabController(length: 4, vsync: this);
-  }
-
-  @override
-  void dispose() {
-    ////implement dispose
-    bcontroller.dispose();
-    super.dispose();
-  }
-  ////? end of tab controller ////
 
   @override
   Widget build(BuildContext context) {
@@ -331,23 +314,6 @@ class _HomePageState extends State<HomePage>
             ],
           ),
         ],
-      ),
-
-      ///? BOTTOM NAVIGATION BAR (in scafoold widget)
-      bottomNavigationBar: Material(
-        elevation: 30,
-        color: Colors.white,
-        child: TabBar(
-          indicatorWeight: 5,
-          controller: bcontroller,
-          indicatorColor: Colors.amber,
-          tabs: const <Widget>[
-            Tab(icon: Icon(Icons.event_seat, color: Colors.yellow)),
-            Tab(icon: Icon(Icons.timer, color: Colors.grey)),
-            Tab(icon: Icon(Icons.shopping_cart, color: Colors.grey)),
-            Tab(icon: Icon(Icons.person_outline, color: Colors.grey))
-          ],
-        ),
       ),
     );
   }
