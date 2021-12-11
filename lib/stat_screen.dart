@@ -295,10 +295,11 @@ class _StatScreenState extends State<StatScreen> {
             child: Icon(iconButton, color: buttonColor, size: 25.0),
           ),
           SizedBox(width: 25.0),
+
+          //? wrapped row in 'sizedbox' widget to exapand its WIDTH
           SizedBox(
             width: MediaQuery.of(context).size.width - 100.0,
-
-            ///! 🟥
+            ////! 🟥 🟥
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[

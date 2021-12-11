@@ -44,17 +44,24 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       ///// using 'home' argument sets main/default front page if not using routes to a navigated page
       home: Scaffold(
         bottomNavigationBar: Material(
+          color: null,
           elevation: 30,
-          color: Colors.white,
           child: TabBar(
-            indicatorWeight: 5,
             controller: controller,
-            indicatorColor: Colors.amber,
+            labelColor: Colors.black,
+            unselectedLabelColor: Colors.amber,
+            indicatorWeight: 5,
+            indicatorColor: Colors.blue,
+            indicator: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(10),
+                    topRight: Radius.circular(10)),
+                color: Colors.green),
             tabs: const <Widget>[
-              Tab(icon: Icon(Icons.event_seat, color: Colors.grey)),
-              Tab(icon: Icon(Icons.timer, color: Colors.grey)),
-              Tab(icon: Icon(Icons.shopping_cart, color: Colors.grey)),
-              Tab(icon: Icon(Icons.person_outline, color: Colors.grey))
+              Tab(icon: Icon(Icons.event_seat)),
+              Tab(icon: Icon(Icons.timer)),
+              Tab(icon: Icon(Icons.shopping_cart)),
+              Tab(icon: Icon(Icons.person_outline))
             ],
           ),
         ),
@@ -72,4 +79,20 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       ),
     );
   }
+}
+
+class ColoredTabBar extends Container implements PreferredSizeWidget {
+  ColoredTabBar(this.color, this.tabBar);
+
+  final Color color;
+  final TabBar tabBar;
+
+  @override
+  Size get preferredSize => tabBar.preferredSize;
+
+  @override
+  Widget build(BuildContext context) => Container(
+        color: color,
+        child: tabBar,
+      );
 }
