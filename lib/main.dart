@@ -43,7 +43,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
       ///+ a 'bottom navigation bar' widget in scaffold
       ///// using 'home' argument sets main/default front page if not using routes to a navigated page
       home: Scaffold(
-        bottomNavigationBar: Material(
+        bottomNavigationBar: BottomAppBar(
           elevation: 30,
           child: TabBar(
             controller: controller,
