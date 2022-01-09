@@ -230,6 +230,7 @@ class _StatScreenState extends State<StatScreen> {
                 SizedBox(height: 25.0),
 
                 ///! 🔶🟩🟡 🟩
+                ////+ CALLING CARD DESIGNS FUNCTION
                 ////* CARDS
                 Column(
                   children: <Widget>[
