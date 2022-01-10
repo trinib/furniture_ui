@@ -1,9 +1,9 @@
 # furniture_ui
 
-homepage
+<h2 align="center"><b><i>homepage</b></i></h2>
 <p align="center">
- <img src="https://github.com/trinib/furniture_ui/blob/main/homepage.png">
+ <img src="https://github.com/trinib/furniture_ui/blob/main/homepage.png" width=300 height=500>
  
-statscreen
+<h2 align="center"><b><i>statscreen</b></i></h2>
  <p align="center">
- <img src="https://github.com/trinib/furniture_ui/blob/main/statscreen.png">
+ <img src="https://github.com/trinib/furniture_ui/blob/main/statscreen.png" width=300 height=500>
