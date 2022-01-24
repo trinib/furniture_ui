@@ -7,6 +7,14 @@ class ProdDesc extends StatefulWidget {
 }
 
 class _ProdDescState extends State<ProdDesc> {
+  int photoIndex = 0;
+  List photos = [
+    'assets/ottoman.jpg',
+    'assets/otto2.jpeg',
+    'assets/otto3.jpg',
+    'assets/otto4.jpg'
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Container();
