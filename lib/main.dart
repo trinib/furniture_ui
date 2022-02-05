@@ -15,6 +15,7 @@ class MyApp extends StatefulWidget {
   State<MyApp> createState() => _MyAppState();
 }
 
+//// need to add 'with SingleTickerProviderStateMixin' for TAB navigation
 class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
   ////? a 'TAB' CONTROLLER (for bottom navigation bar) ////
   late TabController controller;
