@@ -16,24 +16,24 @@ class _ProdDescState extends State<ProdDesc> {
     'assets/otto4.jpg'
   ];
 
-  ///! check if is LAST image to go right (using short function)
-  ///? Go right and stop at last image
-  /// if not last image(< photos.length - 1) then go to next image else stay on last image
-  void _nextImage() {
-    setState(() {
-      photoIndex = photoIndex < photos.length - 1 ? photoIndex + 1 : photoIndex;
-    });
-  }
-
-  ///! check if is FIRST image (using long function)
+  ///! check if is FIRST image (using short function)
   ///? Go left and stop at first image
   //// if not first image(> 0) then go to previous image else stay on first image
   void _previousImage() {
     setState(() {
-      if (photoIndex > 0) {
-        photoIndex = photoIndex - 1;
+      photoIndex = photoIndex > 0 ? photoIndex - 1 : 0;
+    });
+  }
+
+  ///! check if is LAST image  (using long function)
+  ///? Go right and stop at last image
+  /// if not last image(< photos.length - 1) then go to next image else stay on last image
+  void _nextImage() {
+    setState(() {
+      if (photoIndex < photos.length - 1) {
+        photoIndex = photoIndex + 1;
       } else {
-        photoIndex = 0;
+        photoIndex = photos.length - 1;
       }
     });
   }
