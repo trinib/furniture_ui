@@ -15,7 +15,7 @@ class _ProdDescState extends State<ProdDesc> {
     'assets/otto4.jpg'
   ];
 
-  ///? check if is first image (using long function)
+  ///? check if is first image to go left (using long function)
   //// if not first image then go to previous image else stay on first image
   void _previousImage() {
     setState(() {
@@ -27,7 +27,7 @@ class _ProdDescState extends State<ProdDesc> {
     });
   }
 
-  ///? check if is last image (using short function)
+  ///? check if is last image to go right (using short function)
   /// if not last image then go to next image else stay on last image
   void _nextImage() {
     setState(() {
