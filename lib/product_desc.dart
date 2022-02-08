@@ -7,7 +7,7 @@ class ProdDesc extends StatefulWidget {
 }
 
 class _ProdDescState extends State<ProdDesc> {
-  //// A variable to control order of images
+  //// A variable to control order of images (List photos)
   int photoIndex = 0;
   List photos = [
     'assets/ottoman.jpg',
@@ -41,14 +41,18 @@ class _ProdDescState extends State<ProdDesc> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      ///! 🔶
       body: ListView(
         shrinkWrap: true,
         children: [
+          ///! 🔶🟩
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
+              ///! 🔶🟩🟡
               Stack(
                 children: [
+                  ///! 🔶🟩🟡💙
                   Container(
                     height: 370.0,
                     decoration: BoxDecoration(
@@ -57,6 +61,8 @@ class _ProdDescState extends State<ProdDesc> {
                             fit: BoxFit.cover)),
                   ),
                   GestureDetector(
+
+                      ///! 🔶🟩🟡💙
                       child: Container(
                         height: 275.0,
                         width: MediaQuery.of(context).size.width,
@@ -64,8 +70,11 @@ class _ProdDescState extends State<ProdDesc> {
                       ),
                       onTap: _nextImage),
                   GestureDetector(
+
+                      ///! 🔶🟩🟡💙
                       child: Container(
                         height: 275.0,
+                        //// takes first half of screen(/ 2)
                         width: MediaQuery.of(context).size.width / 2,
                         color: Colors.transparent,
                       ),
