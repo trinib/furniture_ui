@@ -61,17 +61,16 @@ class _ProdDescState extends State<ProdDesc> {
                             fit: BoxFit.cover)),
                   ),
                   GestureDetector(
-
-                      ///! 🔶🟩🟡💙
+                      ////! 🔶🟩🟡💙
                       child: Container(
                         height: 275.0,
+                        //// takes full width if screen
                         width: MediaQuery.of(context).size.width,
                         color: Colors.transparent,
                       ),
                       onTap: _nextImage),
                   GestureDetector(
-
-                      ///! 🔶🟩🟡💙
+                      ////! 🔶🟩🟡💙
                       child: Container(
                         height: 275.0,
                         //// takes first half of screen(/ 2)
@@ -79,6 +78,9 @@ class _ProdDescState extends State<ProdDesc> {
                         color: Colors.transparent,
                       ),
                       onTap: _previousImage),
+                  Padding(
+                    padding: EdgeInsets.only(right: 15),
+                  ),
                 ],
               )
             ],
