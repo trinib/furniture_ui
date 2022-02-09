@@ -9,9 +9,9 @@ class ProdDesc extends StatefulWidget {
 }
 
 class _ProdDescState extends State<ProdDesc> {
-  ////! An array list
   //// A INDEX variable to control order of images (List photos)
   int photoIndex = 0;
+  ////! An array list
   List photos = [
     'assets/ottoman.jpg',
     'assets/otto2.jpg',
@@ -64,7 +64,7 @@ class _ProdDescState extends State<ProdDesc> {
                             image: AssetImage(photos[photoIndex]),
                             fit: BoxFit.cover)),
                   ),
-                  ////* GESTURE
+                  //// GESTURE
                   GestureDetector(
                       ////! 🔶🟩 🟡💙
                       child: Container(
@@ -75,7 +75,7 @@ class _ProdDescState extends State<ProdDesc> {
                       ),
                       ////+ CALLING FUNCTION
                       onTap: _nextImage),
-                  ////* GESTURE
+                  //// GESTURE
                   GestureDetector(
                       ////! 🔶🟩 🟡💙
                       child: Container(
