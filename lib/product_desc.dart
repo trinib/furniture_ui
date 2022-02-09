@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -50,10 +52,11 @@ class _ProdDescState extends State<ProdDesc> {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              ///! 🔶🟩🟡
+              ///! 🔶🟩 🟡
               Stack(
                 children: [
-                  ///! 🔶🟩🟡💙
+                  ///! 🔶🟩 🟡💙
+                  ////* BOX OF IMAGES
                   Container(
                     height: 370.0,
                     decoration: BoxDecoration(
@@ -61,29 +64,37 @@ class _ProdDescState extends State<ProdDesc> {
                             image: AssetImage(photos[photoIndex]),
                             fit: BoxFit.cover)),
                   ),
+                  ////* GESTURE
                   GestureDetector(
-                      ////! 🔶🟩🟡💙
+                      ////! 🔶🟩 🟡💙
                       child: Container(
                         height: 275.0,
                         //// takes full width if screen
                         width: MediaQuery.of(context).size.width,
                         color: Colors.transparent,
                       ),
+                      ////+ CALLING FUNCTION
                       onTap: _nextImage),
+                  ////* GESTURE
                   GestureDetector(
-                      ////! 🔶🟩🟡💙
+                      ////! 🔶🟩 🟡💙
                       child: Container(
                         height: 275.0,
                         //// takes first half of screen(/ 2)
                         width: MediaQuery.of(context).size.width / 2,
                         color: Colors.transparent,
                       ),
+                      ////+ CALLING FUNCTION
                       onTap: _previousImage),
+
+                  //// adjust space around
                   Padding(
                     padding: const EdgeInsets.only(right: 15),
+                    ////! 🔶🟩 🟡🟥
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
+                        ////* ICONS/BUTTONS
                         IconButton(
                           onPressed: () {},
                           icon: const Icon(
@@ -91,15 +102,20 @@ class _ProdDescState extends State<ProdDesc> {
                             color: Colors.black,
                           ),
                         ),
+
+                        ///? A Mateial Widget
                         Material(
                           elevation: 4.0,
                           borderRadius: BorderRadius.circular(20),
+                          ////! 🔶🟩 🟡🟥💙
+                          ////* BUTTON BORDER DESIGN
                           child: Container(
                             height: 40,
                             width: 40,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                             ),
+                            ////* ICONS/BUTTONS
                             child: Icon(
                               Icons.favorite,
                               color: Colors.red,

@@ -293,7 +293,11 @@ class _StatScreenState extends State<StatScreen> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(25.0),
                 color: buttonColor.withOpacity(0.3)),
-            child: Icon(iconButton, color: buttonColor, size: 25.0),
+            child: Icon(
+              iconButton,
+              color: buttonColor,
+              size: 25.0,
+            ),
           ),
           SizedBox(width: 25.0),
 
@@ -312,7 +316,11 @@ class _StatScreenState extends State<StatScreen> {
                       color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
-                Icon(Icons.arrow_forward_ios, color: Colors.black, size: 20.0)
+                Icon(
+                  Icons.arrow_forward_ios,
+                  color: Colors.black,
+                  size: 20.0,
+                ),
               ],
             ),
           ),
@@ -332,7 +340,9 @@ class _StatScreenState extends State<StatScreen> {
         height: 125.0,
         width: (MediaQuery.of(context).size.width / 2) - 20.0,
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(7.0), color: Colors.white),
+          borderRadius: BorderRadius.circular(7.0),
+          color: Colors.white,
+        ),
 
         ///! 💙🟩
         child: Column(
