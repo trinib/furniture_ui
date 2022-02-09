@@ -7,7 +7,8 @@ class ProdDesc extends StatefulWidget {
 }
 
 class _ProdDescState extends State<ProdDesc> {
-  //// A variable to control order of images (List photos)
+  ////! An array list
+  //// A INDEX variable to control order of images (List photos)
   int photoIndex = 0;
   List photos = [
     'assets/ottoman.jpg',
@@ -18,7 +19,7 @@ class _ProdDescState extends State<ProdDesc> {
 
   ///! check if is FIRST image (using short function)
   ///? Go left and stop at first image
-  //// if not first image(> 0) then go to previous image else stay on first image
+  //// check if first image, if not first image(> 0) then go to previous image else stay on first image
   void _previousImage() {
     setState(() {
       photoIndex = photoIndex > 0 ? photoIndex - 1 : 0;
@@ -27,7 +28,7 @@ class _ProdDescState extends State<ProdDesc> {
 
   ///! check if is LAST image  (using long function)
   ///? Go right and stop at last image
-  /// if not last image(< photos.length - 1) then go to next image else stay on last image
+  //// check if last image, if not last image(< photos.length - 1) then go to next image else stay on last image
   void _nextImage() {
     setState(() {
       if (photoIndex < photos.length - 1) {
