@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -121,15 +121,87 @@ class _ProdDescState extends State<ProdDesc> {
                               color: Colors.red,
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
+                  Positioned(
+                    top: 320,
+                    left: MediaQuery.of(context).size.width / 2 - 30.0,
+                    child: Row(children: [
+                      SelectedPhoto(
+                        numberOfDots: photos.length,
+                        photoIndex: photoIndex,
+                      ),
+                    ]),
+                  )
                 ],
               )
             ],
           )
         ],
+      ),
+    );
+  }
+}
+
+class SelectedPhoto extends StatelessWidget {
+  final int numberOfDots;
+  final int photoIndex;
+
+  SelectedPhoto({required this.numberOfDots, required this.photoIndex});
+
+  Widget inactivePhoto() {
+    return Padding(
+      padding: EdgeInsets.only(left: 3.0, right: 3.0),
+      child: Container(
+        width: 15,
+        height: 15,
+        decoration: BoxDecoration(
+          color: Colors.grey,
+          borderRadius: BorderRadius.circular(10),
+        ),
+      ),
+    );
+  }
+
+  Widget activePhoto() {
+    return Padding(
+      padding: EdgeInsets.only(left: 3.0, right: 3.0),
+      child: Container(
+        width: 25,
+        height: 25,
+        decoration: BoxDecoration(
+          color: Colors.yellow,
+          borderRadius: BorderRadius.circular(15),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.grey,
+              spreadRadius: 0,
+              blurRadius: 2,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  List<Widget> buildDots() {
+    List<Widget> dots = [];
+
+    for (int i = 0; i < numberOfDots; ++i) {
+      dots.add(i == photoIndex ? activePhoto() : inactivePhoto());
+    }
+
+    return dots;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: buildDots(),
       ),
     );
   }
