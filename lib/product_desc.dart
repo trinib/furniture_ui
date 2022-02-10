@@ -19,7 +19,7 @@ class _ProdDescState extends State<ProdDesc> {
     'assets/otto4.jpg'
   ];
 
-  ///! check if is FIRST image (using short function)
+  ///+ a funtion to check if is FIRST image (using short function)
   ///? Go left and stop at first image
   //// check if first image, if not first image(> 0) then go to previous image else stay on first image
   void _previousImage() {
@@ -28,7 +28,7 @@ class _ProdDescState extends State<ProdDesc> {
     });
   }
 
-  ///! check if is LAST image  (using long function)
+  ///+ a funtion to check if is LAST image (using long function)
   ///? Go right and stop at last image
   //// check if last image, if not last image(< photos.length - 1) then go to next image else stay on last image
   void _nextImage() {
