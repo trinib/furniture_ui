@@ -19,7 +19,7 @@ class _ProdDescState extends State<ProdDesc> {
     'assets/otto4.jpg'
   ];
 
-  ///+ a funtion to check if is FIRST image (using short function)
+  ///+ a function to check if is FIRST image (using short function)
   ///? Go left and stop at first image
   //// check if first image, if not first image(> 0) then go to previous image else stay on first image
   void _previousImage() {
@@ -28,7 +28,7 @@ class _ProdDescState extends State<ProdDesc> {
     });
   }
 
-  ///+ a funtion to check if is LAST image (using long function)
+  ///+ a function to check if is LAST image (using long function)
   ///? Go right and stop at last image
   //// check if last image, if not last image(< photos.length - 1) then go to next image else stay on last image
   void _nextImage() {
@@ -87,6 +87,7 @@ class _ProdDescState extends State<ProdDesc> {
                       ////+ CALLING FUNCTION
                       onTap: _previousImage),
 
+                  ////* TOP ICONS
                   //// adjust space around
                   Padding(
                     padding: const EdgeInsets.only(right: 15),
@@ -94,7 +95,7 @@ class _ProdDescState extends State<ProdDesc> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
-                        ////* ICONS/BUTTONS
+                        ////* ICON
                         IconButton(
                           onPressed: () {},
                           icon: const Icon(
@@ -115,7 +116,7 @@ class _ProdDescState extends State<ProdDesc> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            ////* ICONS/BUTTONS
+                            ////* ICONS
                             child: Icon(
                               Icons.favorite,
                               color: Colors.red,
@@ -125,12 +126,15 @@ class _ProdDescState extends State<ProdDesc> {
                       ],
                     ),
                   ),
+
                   Positioned(
                     top: 320,
                     left: MediaQuery.of(context).size.width / 2 - 30.0,
                     child: Row(children: [
                       SelectedPhoto(
+                        ///+ CALLING THE NUMBER OF DOTS ACCORDING TO THE LENGTH OF LIST
                         numberOfDots: photos.length,
+                        //// to control images order in the list
                         photoIndex: photoIndex,
                       ),
                     ]),
@@ -145,12 +149,17 @@ class _ProdDescState extends State<ProdDesc> {
   }
 }
 
+////+ A CLASS FOR SELECTED PHOTO INDICATOR
 class SelectedPhoto extends StatelessWidget {
+  ///? Two parameters/property fields
+  //// numberOfDots will be equal to the number of images in the photoIndex list
   final int numberOfDots;
   final int photoIndex;
 
+  ///? a contsructor to call the parameters when the object is created/executed in main build
   SelectedPhoto({required this.numberOfDots, required this.photoIndex});
 
+  ///? A funtion/method for INACTIVE PHOTO indicator
   Widget inactivePhoto() {
     return Padding(
       padding: EdgeInsets.only(left: 3.0, right: 3.0),
@@ -165,6 +174,7 @@ class SelectedPhoto extends StatelessWidget {
     );
   }
 
+  ///? A funtion/method for ACTIVE PHOTO indicator
   Widget activePhoto() {
     return Padding(
       padding: EdgeInsets.only(left: 3.0, right: 3.0),
