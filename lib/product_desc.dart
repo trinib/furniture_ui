@@ -149,7 +149,7 @@ class _ProdDescState extends State<ProdDesc> {
   }
 }
 
-////+ A CLASS FOR SELECTED PHOTO INDICATOR
+////+ A CLASS FOR ... DOTTED INDICATOR
 class SelectedPhoto extends StatelessWidget {
   ///? Two parameters/property fields
   //// numberOfDots will be equal to the number of images in the photoIndex list
@@ -196,10 +196,11 @@ class SelectedPhoto extends StatelessWidget {
     );
   }
 
+  ///? A function for the dots and list
   List<Widget> buildDots() {
     List<Widget> dots = [];
 
-    for (int i = 0; i < numberOfDots; ++i) {
+    for (int i = 0; i < numberOfDots; i++) {
       dots.add(i == photoIndex ? activePhoto() : inactivePhoto());
     }
 
