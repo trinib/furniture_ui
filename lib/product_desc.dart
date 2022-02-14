@@ -159,7 +159,7 @@ class SelectedPhoto extends StatelessWidget {
   ///? a contsructor to call the parameters when the object is created/executed in main build
   SelectedPhoto({required this.numberOfDots, required this.photoIndex});
 
-  ///? A funtion/method for INACTIVE PHOTO indicator
+  ///? A funtion/method to show INACTIVE PHOTO indicator
   Widget inactivePhoto() {
     return Padding(
       padding: EdgeInsets.only(left: 3.0, right: 3.0),
@@ -174,7 +174,7 @@ class SelectedPhoto extends StatelessWidget {
     );
   }
 
-  ///? A funtion/method for ACTIVE PHOTO indicator
+  ///? A funtion/method to show ACTIVE PHOTO indicator
   Widget activePhoto() {
     return Padding(
       padding: EdgeInsets.only(left: 3.0, right: 3.0),
@@ -196,7 +196,7 @@ class SelectedPhoto extends StatelessWidget {
     );
   }
 
-  ///? A function for the dots and list
+  ///? A function to loop dots through list
   List<Widget> buildDots() {
     List<Widget> dots = [];
 
