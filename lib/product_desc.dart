@@ -132,8 +132,8 @@ class _ProdDescState extends State<ProdDesc> {
                     left: MediaQuery.of(context).size.width / 2 - 30.0,
                     child: Row(children: [
                       SelectedPhoto(
-                        ///+ CALLING THE NUMBER OF DOTS ACCORDING TO THE LENGTH OF LIST
-                        numberOfDots: photos.length,
+                        ///+ CALLING THE NUMBER OF DOTS FROM CONSTRUCTOR ACCORDING TO THE LENGTH OF LIST
+                        amountOfDots: photos.length,
                         //// to control images order in the list
                         photoIndex: photoIndex,
                       ),
@@ -152,12 +152,12 @@ class _ProdDescState extends State<ProdDesc> {
 ////+ A CLASS FOR ... DOTTED INDICATOR
 class SelectedPhoto extends StatelessWidget {
   ///? Two parameters/property fields
-  //// numberOfDots will be equal to the number of images in the photoIndex list
-  final int numberOfDots;
+  //// amountOfDots will be equal to the number of images in the photoIndex list
+  final int amountOfDots;
   final int photoIndex;
 
-  ///? a contsructor to call the parameters when the object is created/executed in main build
-  SelectedPhoto({required this.numberOfDots, required this.photoIndex});
+  ///? a contsructor needed for the parameters when the object is CALLED(created/executed) in main build
+  SelectedPhoto({required this.amountOfDots, required this.photoIndex});
 
   ///? A funtion/method to show INACTIVE PHOTO indicator
   Widget inactivePhoto() {
@@ -196,14 +196,18 @@ class SelectedPhoto extends StatelessWidget {
     );
   }
 
-  ///? A function to loop dots through list
+  ///? A list method to loop dots through list
   List<Widget> buildDots() {
+    //// a variable dots equal to an empty list
     List<Widget> dots = [];
-
-    for (int i = 0; i < numberOfDots; i++) {
+    //// while i is less than the number of dots in the list, add one
+    for (int i = 0; i < amountOfDots; i++) {
+      ///? add dots function with if and else statment
+      //// if i is equal to photoIndex call activePhoto else call inactivePhot
+      ////(0 = 0(first in list))
       dots.add(i == photoIndex ? activePhoto() : inactivePhoto());
     }
-
+    //// need to return dots
     return dots;
   }
 
