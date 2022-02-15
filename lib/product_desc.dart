@@ -131,8 +131,10 @@ class _ProdDescState extends State<ProdDesc> {
                     top: 320,
                     left: MediaQuery.of(context).size.width / 2 - 30.0,
                     child: Row(children: [
+                      ///+ CALLING SelectedPhoto CLASS
                       SelectedPhoto(
-                        ///+ CALLING THE NUMBER OF DOTS FROM CONSTRUCTOR ACCORDING TO THE LENGTH OF LIST
+                        ///? calling the 2 constructors
+                        //// creates the dots that will be equal length of photo list
                         amountOfDots: photos.length,
                         //// to control images order in the list
                         photoIndex: photoIndex,
@@ -154,6 +156,7 @@ class SelectedPhoto extends StatelessWidget {
   ///? Two parameters/property fields
   //// amountOfDots will be equal to the number of images in the photoIndex list
   final int amountOfDots;
+  //// equal to zero meaning first item in list
   final int photoIndex;
 
   ///? a contsructor needed for the parameters when the object is CALLED(created/executed) in main build
@@ -196,14 +199,14 @@ class SelectedPhoto extends StatelessWidget {
     );
   }
 
-  ///? A list method to loop dots through list
+  ///? A list method to loop dots(increment) through list
   List<Widget> buildDots() {
     //// a variable dots equal to an empty list
     List<Widget> dots = [];
     //// while i is less than the number of dots in the list, add one
     for (int i = 0; i < amountOfDots; i++) {
       ///? add dots function with if and else statment
-      //// if i is equal to photoIndex call activePhoto else call inactivePhot
+      //// if i is equal to photoIndex(current image) call activePhoto else call inactivePhoto
       ////(0 = 0(first in list))
       dots.add(i == photoIndex ? activePhoto() : inactivePhoto());
     }
@@ -211,6 +214,7 @@ class SelectedPhoto extends StatelessWidget {
     return dots;
   }
 
+  ///* BUILD WIDGET
   @override
   Widget build(BuildContext context) {
     return Center(
