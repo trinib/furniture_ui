@@ -104,7 +104,7 @@ class _ProdDescState extends State<ProdDesc> {
                           ),
                         ),
 
-                        ///? A Mateial Widget
+                        ///? A Material Widget
                         Material(
                           elevation: 4.0,
                           borderRadius: BorderRadius.circular(20),
@@ -149,17 +149,17 @@ class _ProdDescState extends State<ProdDesc> {
   }
 }
 
-////+ A CLASS FOR ... DOTTED INDICATOR
+////+ A CLASS TO BUILD/CREATE DOTTED INDICATORS
 class SelectedPhoto extends StatelessWidget {
   ///? Two parameters/property fields
   //// amountOfDots will be equal to the number of images in the photoIndex list
   final int amountOfDots;
   final int photoIndex;
 
-  ///? a contsructor needed for the parameters when the object is CALLED(created/executed) in main build
+  ///? a constructor needed for the parameters when the object is CALLED(created/executed) in main build
   SelectedPhoto({required this.amountOfDots, required this.photoIndex});
 
-  ///? A funtion/method to show INACTIVE PHOTO indicator
+  ///? A function to show INACTIVE PHOTO indicator
   Widget inactivePhoto() {
     return Padding(
       padding: EdgeInsets.only(left: 3.0, right: 3.0),
@@ -174,7 +174,7 @@ class SelectedPhoto extends StatelessWidget {
     );
   }
 
-  ///? A funtion/method to show ACTIVE PHOTO indicator
+  ///? A function to show ACTIVE PHOTO indicator
   Widget activePhoto() {
     return Padding(
       padding: EdgeInsets.only(left: 3.0, right: 3.0),
@@ -196,14 +196,15 @@ class SelectedPhoto extends StatelessWidget {
     );
   }
 
-  ///? A list method to loop dots through list
+  ///+ A METHOD TO LOOP DOTS THROUGH LIST
   List<Widget> buildDots() {
-    //// a variable dots equal to an empty list
+    //// need a variable called dots equal to an empty list because the widget is a list
     List<Widget> dots = [];
-    //// while i is less than the number of dots in the list, add one
+
+    /// while i is less than the amount of dots in the list, ADD ONE
     for (int i = 0; i < amountOfDots; i++) {
-      ///? add dots function with if and else statment
-      //// if i is equal to photoIndex call activePhoto else call inactivePhot
+      ///? a add dots function with if and else statement
+      //// add dot if i(0) is equal to photoIndex(0)(current photo) call activePhoto else call inactivePhoto
       ////(0 = 0(first in list))
       dots.add(i == photoIndex ? activePhoto() : inactivePhoto());
     }
