@@ -133,6 +133,7 @@ class _ProdDescState extends State<ProdDesc> {
                     child: Row(children: [
                       SelectedPhoto(
                         ///+ CALLING THE NUMBER OF DOTS FROM CONSTRUCTOR ACCORDING TO THE LENGTH OF LIST
+                        //// amount of dots to be created will be equal to the amount of photos
                         amountOfDots: photos.length,
                         //// to control images order in the list
                         photoIndex: photoIndex,
@@ -152,8 +153,9 @@ class _ProdDescState extends State<ProdDesc> {
 ////+ A CLASS TO BUILD/CREATE DOTTED INDICATORS
 class SelectedPhoto extends StatelessWidget {
   ///? Two parameters/property fields
-  //// amountOfDots will be equal to the number of images in the photoIndex list
+  //// amountOfDots variable to create in list
   final int amountOfDots;
+  //// the INDEX variable(0) to control order of dots in list
   final int photoIndex;
 
   ///? a constructor needed for the parameters when the object is CALLED(created/executed) in main build
