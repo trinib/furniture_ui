@@ -1,13 +1,13 @@
 ---
 name: Issue
 about: Create your issue here
-title: Only for
-labels: bug
-assignees: trinib
+title: Only If using Raspberry Pi & Rasbain OS
+labels: 'issues'
+assignees: ''
 
 ---
 
-**Which company/project**
+**Which project**
 
 **Which image size**
 
