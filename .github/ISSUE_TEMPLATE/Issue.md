@@ -1,6 +1,6 @@
 ---
 name: Issue
-about: ❗ Ceate only if using Raspberry Pi & Rasbain OS ❗
+about: ❗ Ceate only if using Raspberry Pi & Raspbian OS ❗
 title: 'New Issue'
 labels: ''
 assignees: ''
