@@ -1,10 +1,10 @@
 blank_issues_enabled: false
 
-name: Issue
-about: ❗ Ceate only if using Raspberry Pi & Raspbian OS ❗
-title: 'New Issue'
-labels: ''
-assignees: ''
+- name: Issue
+  about: ❗ Ceate only if using Raspberry Pi & Raspbian OS ❗
+  title: 'New Issue'
+  labels: ''
+   assignees: ''
 
 ---
 
