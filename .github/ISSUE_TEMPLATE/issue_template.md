@@ -1,7 +1,7 @@
 ---
 
 name: issue_template
-about: ''
+about: 'd'
 title: ''
 labels: ''
 assignees: ''
