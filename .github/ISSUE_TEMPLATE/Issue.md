@@ -1,7 +1,7 @@
 ---
 name: Issue
-about: ❗ Ceate only if using Raspberry Pi & Raspbian OS ❗
-title: 'New Issue'
+about: "❗ Ceate only if using Raspberry Pi & Raspbian OS ❗"
+title: New Issue
 labels: ''
 assignees: ''
 
@@ -48,4 +48,3 @@ Problem Description:
 ---
 
 **_Screenshots_** <!-- (Optional) -->
-

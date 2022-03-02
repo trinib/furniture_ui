@@ -1,9 +1,10 @@
 ---
 name: Feature/Fix
-about: 🙏 Recommend features or fixes 🙏
+about: "\U0001F64F Recommend features or fixes \U0001F64F"
 title: ''
 labels: ''
 assignees: ''
 
 ---
+
 
