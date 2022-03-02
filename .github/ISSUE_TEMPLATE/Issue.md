@@ -1,33 +1,49 @@
 ---
 name: Issue
 about: Create your issue here
-title: Only If using Raspberry Pi & Rasbain OS
-labels: 'issues'
+title: ❗ Ceate Only if using Raspberry Pi & Rasbain OS ❗
+labels: ''
 assignees: ''
 
 ---
+## Before making issue please meet Prerequisites (Required)
 
-**Which project**
+### Prerequisites : <!-- to select : "[X]" -->
 
-**Which image size**
+_Which project/projects has issue_
 
-**Screenshots**
-(required)
+- [ ] Aduard Home
+- [ ] Wireguard
+- [ ] Unbound
+- [ ] Cloudflare
+- [ ] Stubby 
 
-**Expected look**
-A clear and concise description of what you expected to see.  An example image would be great.
+_Which platform/platforms is used_
+
+- [ ] Windows
+- [ ] Linux
+- [ ] Mac
+- [ ] Android
+- [ ] IOS
+
+_Which browser/browsers is used_
+
+- [ ] Firefox
+- [ ] Chrome
+- [ ] Brave
+- [ ] Opera
+
+Issue Type
+
+- [ ] Not working
+- [ ] Slow speed
+- [ ] Other <!-- explain in problem description -->
+
+Problem Description
+
+<!-- Explain here -->
 
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+_Screenshots_
+(Optional)
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
-
-**Additional context**
-Add any other context about the problem here.
