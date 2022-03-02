@@ -1,6 +1,6 @@
 ---
-name: Feature/Fixes
-about: Recommend a feature or fix
+name: A Feature/Fix
+about: Recommend a features or fixes
 title: ''
 labels: ''
 assignees: ''
