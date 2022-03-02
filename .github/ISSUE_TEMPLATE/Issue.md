@@ -1,5 +1,5 @@
 ---
-name: A New Issue
+name: New Issue
 about: ❗ Ceate only if using Raspberry Pi & Raspbian OS ❗
 title: 'New Issue'
 labels: ''
@@ -47,6 +47,5 @@ Problem Description:
 
 ---
 
-**_Screenshots_**
-(Optional)
+**_Screenshots_** <!-- (Optional) -->
 
