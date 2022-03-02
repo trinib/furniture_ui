@@ -1,7 +1,7 @@
 ---
 name: Issue
 about: ❗ Ceate only if using Raspberry Pi & Rasbain OS ❗
-title: ''
+title: 'New Issue'
 labels: ''
 assignees: ''
 
@@ -39,9 +39,11 @@ Issue Type
 - [ ] Slow speed
 - [ ] Other <!-- explain in problem description -->
 
-Problem Description
+Problem Description:
 
 <!-- Explain here -->
+
+---
 
 _Screenshots_
 (Optional)
