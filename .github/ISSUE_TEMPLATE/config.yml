@@ -4,7 +4,7 @@ blank_issues_enabled: false
   about: ❗ Ceate only if using Raspberry Pi & Raspbian OS ❗
   title: 'New Issue'
   labels: ''
-   assignees: ''
+  assignees: ''
 
 ---
 
