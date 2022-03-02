@@ -1,16 +1,17 @@
 ---
-name: Issue
+name: A New Issue
 about: ❗ Ceate only if using Raspberry Pi & Raspbian OS ❗
 title: 'New Issue'
 labels: ''
 assignees: ''
 
 ---
-## Before making issue please meet Prerequisites (Required)
+
+<!-- Before making issue please meet Prerequisites (Required) -->
 
 ### Prerequisites : <!-- to select : "[X]" -->
 
-_Which project/projects has issue_
+**_Which project/projects has issue_**
 
 - [ ] Aduard Home
 - [ ] Wireguard
@@ -18,7 +19,7 @@ _Which project/projects has issue_
 - [ ] Cloudflare
 - [ ] Stubby 
 
-_Which platform/platforms is used_
+**_Which platform/platforms is used_**
 
 - [ ] Windows
 - [ ] Linux
@@ -26,17 +27,18 @@ _Which platform/platforms is used_
 - [ ] Android
 - [ ] IOS
 
-_Which browser/browsers is used_
+**_Which browser/browsers is used_**
 
 - [ ] Firefox
 - [ ] Chrome
 - [ ] Brave
 - [ ] Opera
 
-Issue Type
+**_Issue Type_**
 
 - [ ] Not working
-- [ ] Slow speed
+- [ ] Slow speeds
+- [ ] Not installing
 - [ ] Other <!-- explain in problem description -->
 
 Problem Description:
@@ -45,6 +47,6 @@ Problem Description:
 
 ---
 
-_Screenshots_
+**_Screenshots_**
 (Optional)
 
