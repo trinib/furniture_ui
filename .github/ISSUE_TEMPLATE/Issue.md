@@ -2,8 +2,8 @@
 name: Issue
 about: Create your issue here
 title: 'Only for '
-labels: 'edsffs'
-assignees: 'ddd'
+labels: 'bug'
+assignees: 'trinib'
 
 ---
 
