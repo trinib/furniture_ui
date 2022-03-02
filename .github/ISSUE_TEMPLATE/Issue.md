@@ -1,9 +1,9 @@
 ---
 name: Issue
 about: Create your issue here
-title: 'Only for '
-labels: 'bug'
-assignees: 'trinib'
+title: Only for
+labels: bug
+assignees: trinib
 
 ---
 
