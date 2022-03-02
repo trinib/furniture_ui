@@ -1,6 +1,6 @@
 ---
 name: Feature/Fixes
-about: 
+about: Add A feature or fix
 title: ''
 labels: ''
 assignees: ''
