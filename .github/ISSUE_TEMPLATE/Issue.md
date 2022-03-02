@@ -1,7 +1,7 @@
 ---
 name: Issue
-about: Create your issue here
-title: ❗ Ceate Only if using Raspberry Pi & Rasbain OS ❗
+about: ❗ Ceate only if using Raspberry Pi & Rasbain OS ❗
+title: ''
 labels: ''
 assignees: ''
 
@@ -42,7 +42,6 @@ Issue Type
 Problem Description
 
 <!-- Explain here -->
-
 
 _Screenshots_
 (Optional)
