@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-<!-- Before making issue please meet Prerequisites (Required) -->
+<!-- Before making issue please meet Prerequisites (❗Required❗) -->
 
 ### Prerequisites : <!-- to select : "[X]" -->
 
