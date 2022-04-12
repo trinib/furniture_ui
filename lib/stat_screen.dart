@@ -94,7 +94,7 @@ class _StatScreenState extends State<StatScreen> {
                               style: BorderStyle.solid,
                               width: 3.0),
                           image: DecorationImage(
-                              image: AssetImage('assets/chris.jpg'))),
+                              image: AssetImage('assets/T.png'))),
                     ),
                     SizedBox(width: 10.0),
 
@@ -104,7 +104,7 @@ class _StatScreenState extends State<StatScreen> {
                       children: <Widget>[
                         ////* TEXTS
                         Text(
-                          'Pino',
+                          'TTT',
                           style: TextStyle(
                               fontFamily: 'Quicksand',
                               fontSize: 25.0,

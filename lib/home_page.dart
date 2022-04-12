@@ -87,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                                 ),
                                 //// image
                                 image: const DecorationImage(
-                                    image: AssetImage('assets/chris.jpg'))),
+                                    image: AssetImage('assets/T.png'))),
                           ),
                           ////* MENU ICON
                           //// adjust size
