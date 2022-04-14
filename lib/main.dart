@@ -49,13 +49,13 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
           child: TabBar(
             controller: controller,
             labelColor: Colors.black,
-            unselectedLabelColor: Colors.amber,
+            unselectedLabelColor: Color.fromARGB(255, 4, 220, 101),
             indicator: BoxDecoration(
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(10),
                   topRight: Radius.circular(10),
                 ),
-                color: Colors.amber.shade800),
+                color: Color.fromARGB(255, 0, 170, 74)),
             tabs: const <Widget>[
               Tab(icon: Icon(Icons.event_seat)),
               Tab(icon: Icon(Icons.timer)),

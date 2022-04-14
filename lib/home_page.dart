@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
                   Container(
                     height: 250,
                     width: double.infinity,
-                    color: Colors.amber.shade400,
+                    color: Color.fromARGB(255, 0, 162, 100),
                   ),
                   ////* CIRCLES
                   //// first circle
@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
                       width: 400.0,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(200),
-                        color: const Color(0xffFFEDA9).withOpacity(0.2),
+                        color: Color.fromARGB(59, 84, 209, 163),
                       ),
                     ),
                   ),
@@ -55,7 +55,7 @@ class _HomePageState extends State<HomePage> {
                       //// decoration
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(200),
-                        color: const Color(0xffFFEDA9).withOpacity(0.2),
+                        color: Color.fromARGB(59, 84, 209, 163),
                       ),
                     ),
                   ),
@@ -250,7 +250,7 @@ class _HomePageState extends State<HomePage> {
                       //// background box
                       Container(
                         height: 75,
-                        color: Colors.amber,
+                        color: Color.fromARGB(255, 0, 166, 100),
                         width: MediaQuery.of(context).size.width / 4,
 
                         ///! 🔶🟡 🟡 🟥💙 🟩💙
@@ -414,7 +414,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       height: 40.0,
                       width: 50.0,
-                      color: Colors.amber,
+                      color: Color.fromARGB(255, 0, 166, 100),
                       child: Center(
                         child: Text(
                           '\$248',
@@ -430,7 +430,7 @@ class _HomePageState extends State<HomePage> {
                     Container(
                       height: 40.0,
                       width: 100.0,
-                      color: Colors.amber.shade300,
+                      color: Color.fromARGB(255, 0, 227, 110),
                       child: Center(
                         child: Text(
                           'Add to cart',

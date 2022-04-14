@@ -42,7 +42,7 @@ class _StatScreenState extends State<StatScreen> {
             Container(
               height: 250.0,
               width: double.infinity,
-              color: Color(getColorHexFromStr('#FDD148')),
+              color: Color.fromARGB(255, 0, 162, 100),
             ),
             ////* CIRCLES
             //// first 🔶🟩🟡 💙💙
@@ -54,8 +54,7 @@ class _StatScreenState extends State<StatScreen> {
                 width: 400.0,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(200.0),
-                    color:
-                        Color(getColorHexFromStr('#FEE16D')).withOpacity(0.4)),
+                    color: Color.fromARGB(59, 84, 209, 163)),
               ),
             ),
             Positioned(
@@ -67,8 +66,7 @@ class _StatScreenState extends State<StatScreen> {
                   width: 300.0,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(150.0),
-                      color: Color(getColorHexFromStr('#FEE16D'))
-                          .withOpacity(0.5))),
+                      color: Color.fromARGB(59, 84, 209, 163))),
             ),
 
             ///! 🔶🟩🟡 🟩
