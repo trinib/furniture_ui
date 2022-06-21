@@ -141,7 +141,61 @@ class _ProdDescState extends State<ProdDesc> {
                     ]),
                   )
                 ],
-              )
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: EdgeInsets.only(left: 15),
+                child: Text(
+                  'Alicide Number 232X',
+                  style: TextStyle(
+                      fontFamily: 'Montserrat',
+                      fontSize: 15,
+                      color: Colors.grey),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: EdgeInsets.only(
+                  left: 15,
+                ),
+                child: Text(
+                  'Finn Navian-Sofa',
+                  style: TextStyle(
+                      fontFamily: 'Monsterrat',
+                      fontSize: 25,
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              SizedBox(height: 10),
+              Padding(
+                padding: EdgeInsets.only(left: 15, right: 15),
+                child: Row(
+                  children: [
+                    Container(
+                      width: (MediaQuery.of(context).size.width / 3 +
+                              MediaQuery.of(context).size.width / 2) -
+                          20.0,
+                      child: Text(
+                        'Scandinavian small size double sofa / imported full leather /Dale Italia oil wax leather black',
+                        style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 14.0,
+                          color: Colors.grey.withOpacity(0.8),
+                        ),
+                      ),
+                    ),
+                    Text(
+                      '\$ 248',
+                      style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 25.0,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+              ),
             ],
           )
         ],
