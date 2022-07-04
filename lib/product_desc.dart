@@ -272,7 +272,7 @@ class SelectedPhoto extends StatelessWidget {
         width: 25,
         height: 25,
         decoration: BoxDecoration(
-          color: Colors.yellow,
+          color: Color.fromARGB(255, 43, 187, 105),
           borderRadius: BorderRadius.circular(15),
           boxShadow: [
             BoxShadow(
