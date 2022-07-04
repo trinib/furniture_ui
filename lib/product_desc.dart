@@ -196,6 +196,40 @@ class _ProdDescState extends State<ProdDesc> {
                   ],
                 ),
               ),
+              ////* COLOR PALLETS
+              SizedBox(height: 20),
+              Padding(
+                padding: EdgeInsets.only(left: 15),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25),
+                          color: Colors.brown),
+                    ),
+                    SizedBox(width: 20),
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: Color.fromARGB(255, 117, 108, 104),
+                      ),
+                    ),
+                    SizedBox(width: 20),
+                    Container(
+                      height: 50,
+                      width: 50,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(25),
+                        color: Color.fromARGB(255, 186, 183, 181),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           )
         ],
