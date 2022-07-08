@@ -241,6 +241,28 @@ class _ProdDescState extends State<ProdDesc> {
                       color: Colors.black,
                       fontWeight: FontWeight.bold),
                 ),
+              ),
+              SizedBox(height: 20),
+              Padding(
+                padding: EdgeInsets.only(left: 15),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 50,
+                      width: 50,
+                      child: Icon(Icons.time_to_leave,
+                          color: Colors.grey, size: 30),
+                    ),
+                    Text(
+                      "x30",
+                      style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 17,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
               )
             ],
           )
