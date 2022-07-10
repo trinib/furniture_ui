@@ -242,15 +242,43 @@ class _ProdDescState extends State<ProdDesc> {
                       fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height: 20),
+              SizedBox(height: 10),
               Padding(
-                padding: EdgeInsets.only(left: 15),
+                padding: EdgeInsets.only(left: 5),
                 child: Row(
                   children: [
                     Container(
                       height: 50,
                       width: 50,
                       child: Icon(Icons.time_to_leave,
+                          color: Colors.grey, size: 30),
+                    ),
+                    Text(
+                      "x60",
+                      style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 17,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Container(
+                      height: 50,
+                      width: 50,
+                      child: Icon(Icons.timelapse_sharp,
+                          color: Colors.grey, size: 30),
+                    ),
+                    Text(
+                      "x30",
+                      style: TextStyle(
+                          fontFamily: 'Montserrat',
+                          fontSize: 17,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Container(
+                      height: 50,
+                      width: 50,
+                      child: Icon(Icons.timeline_rounded,
                           color: Colors.grey, size: 30),
                     ),
                     Text(
@@ -267,6 +295,46 @@ class _ProdDescState extends State<ProdDesc> {
             ],
           )
         ],
+      ),
+
+      ///? BOTTOM NAVIGATION BAR
+      bottomNavigationBar: Material(
+        elevation: 7.0,
+        color: Colors.white,
+        child: Container(
+          height: 50.0,
+          width: MediaQuery.of(context).size.width,
+          color: Colors.white,
+          child: Row(
+            children: [
+              SizedBox(width: 10),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.white,
+                  child: Icon(
+                    Icons.shopping_cart,
+                    color: Colors.grey,
+                  ),
+                ),
+              ),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  height: 50,
+                  width: 50,
+                  color: Colors.white,
+                  child: Icon(
+                    Icons.price_check_sharp,
+                    color: Colors.grey,
+                  ),
+                ),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
