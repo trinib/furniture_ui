@@ -331,6 +331,20 @@ class _ProdDescState extends State<ProdDesc> {
                     color: Colors.grey,
                   ),
                 ),
+              ),
+              Container(
+                color: Color.fromARGB(255, 0, 166, 100),
+                width: MediaQuery.of(context).size.width - 130,
+                child: Center(
+                  child: Text(
+                    'Add to cart',
+                    style: TextStyle(
+                        fontFamily: 'Montserrat',
+                        fontSize: 10,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
               )
             ],
           ),
