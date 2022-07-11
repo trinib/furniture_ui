@@ -5,6 +5,7 @@ import '/stat_screen.dart';
 import '/shop_cart.dart';
 import '/product_desc.dart';
 import '/home_page.dart';
+import '/test.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,7 +25,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
   void initState() {
     super.initState();
     //// amount of icons to show
-    controller = TabController(length: 4, vsync: this);
+    controller = TabController(length: 5, vsync: this);
   }
 
   @override
@@ -60,7 +61,8 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
               Tab(icon: Icon(Icons.event_seat)),
               Tab(icon: Icon(Icons.timer)),
               Tab(icon: Icon(Icons.shopping_cart)),
-              Tab(icon: Icon(Icons.person_outline))
+              Tab(icon: Icon(Icons.person_outline)),
+              Tab(icon: Icon(Icons.share_arrival_time))
             ],
           ),
         ),
@@ -74,6 +76,7 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
             ProdDesc(),
             ShopCart(),
             StatScreen(),
+            Test(),
           ],
         ),
       ),
