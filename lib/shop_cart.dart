@@ -11,6 +11,47 @@ class ShopCart extends StatefulWidget {
 class _ShopCartState extends State<ShopCart> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: ListView());
+    return Scaffold(
+        body: ListView(
+      children: [
+        Column(
+          children: [
+            Stack(
+              children: [
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  color: Color.fromARGB(255, 0, 162, 100),
+                ),
+                Positioned(
+                  bottom: 0,
+                  right: 200,
+                  child: Container(
+                    height: 400,
+                    width: 400,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(200),
+                      color: Color.fromARGB(59, 84, 209, 163),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 50,
+                  left: 200,
+                  child: Container(
+                    height: 400,
+                    width: 400,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(200),
+                      color: Color.fromARGB(59, 84, 209, 163),
+                    ),
+                  ),
+                )
+              ],
+            )
+          ],
+        )
+      ],
+    ));
   }
 }
