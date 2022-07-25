@@ -46,9 +46,40 @@ class _ShopCartState extends State<ShopCart> {
                       color: Color.fromARGB(59, 84, 209, 163),
                     ),
                   ),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    SizedBox(
+                      width: 15,
+                      height: 10,
+                    ),
+                    Container(
+                      alignment: Alignment.topLeft,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_back,
+                          size: 30,
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 15,
+                      height: 15,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 10),
+                      child: Text(
+                        'Shopping Cart',
+                        style: TextStyle(
+                            fontSize: 30, fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ],
                 )
               ],
-            )
+            ),
           ],
         )
       ],
