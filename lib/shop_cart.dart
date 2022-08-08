@@ -94,6 +94,15 @@ class _ShopCartState extends State<ShopCart> {
         padding: EdgeInsets.all(10),
         child: Material(
           borderRadius: BorderRadius.circular(10),
+          elevation: 3,
+          child: Container(
+            padding: EdgeInsets.only(left: 15, right: 10),
+            width: MediaQuery.of(context).size.width - 20.0,
+            height: 150,
+            decoration: BoxDecoration(
+              color: Colors.white,
+            ),
+          ),
         ),
       ),
     );
