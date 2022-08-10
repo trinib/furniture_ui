@@ -101,6 +101,7 @@ class _ShopCartState extends State<ShopCart> {
             height: 150,
             decoration: BoxDecoration(
               color: Colors.white,
+              borderRadius: BorderRadius.circular(10),
             ),
           ),
         ),

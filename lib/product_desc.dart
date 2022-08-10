@@ -127,9 +127,11 @@ class _ProdDescState extends State<ProdDesc> {
                     ),
                   ),
 
+                  ///* DOTS
                   Positioned(
                     top: 320,
                     left: MediaQuery.of(context).size.width / 2 - 30.0,
+                    ////! 🔶🟩 🟡🟥
                     child: Row(children: [
                       SelectedPhoto(
                         ///+ CALLING THE NUMBER OF DOTS FROM CONSTRUCTOR ACCORDING TO THE LENGTH OF LIST
@@ -142,9 +144,11 @@ class _ProdDescState extends State<ProdDesc> {
                   )
                 ],
               ),
+              ////! 🔶🟩
               SizedBox(height: 20),
               Padding(
                 padding: EdgeInsets.only(left: 15),
+                ////* TEXT
                 child: Text(
                   'Alicide Number 232X',
                   style: TextStyle(
@@ -158,6 +162,7 @@ class _ProdDescState extends State<ProdDesc> {
                 padding: EdgeInsets.only(
                   left: 15,
                 ),
+                ////* TEXT
                 child: Text(
                   'Finn Navian-Sofa',
                   style: TextStyle(
@@ -172,6 +177,7 @@ class _ProdDescState extends State<ProdDesc> {
                 padding: EdgeInsets.only(left: 15, right: 15),
                 child: Row(
                   children: [
+                    ////! 🔶🟩 🟥💙
                     Container(
                       width: (MediaQuery.of(context).size.width / 3 +
                               MediaQuery.of(context).size.width / 2) -
@@ -185,6 +191,7 @@ class _ProdDescState extends State<ProdDesc> {
                         ),
                       ),
                     ),
+                    ////! 🔶🟩 🟥
                     Text(
                       '\$ 248',
                       style: TextStyle(
@@ -202,6 +209,7 @@ class _ProdDescState extends State<ProdDesc> {
                 padding: EdgeInsets.only(left: 15),
                 child: Row(
                   children: [
+                    ////! 🔶🟩 🟥💙
                     Container(
                       height: 50,
                       width: 50,
@@ -248,6 +256,7 @@ class _ProdDescState extends State<ProdDesc> {
                 padding: EdgeInsets.only(left: 5),
                 child: Row(
                   children: [
+                    ////! 🔶🟩 🟥💙
                     Container(
                       height: 50,
                       width: 50,
@@ -262,6 +271,7 @@ class _ProdDescState extends State<ProdDesc> {
                           color: Colors.black,
                           fontWeight: FontWeight.bold),
                     ),
+                    ////! 🔶🟩🟥 💙
                     Container(
                       height: 50,
                       width: 50,
@@ -277,6 +287,7 @@ class _ProdDescState extends State<ProdDesc> {
                           fontWeight: FontWeight.bold),
                     ),
                     Container(
+                      ////! 🔶🟩🟥 💙
                       height: 50,
                       width: 50,
                       child: Icon(Icons.timeline_rounded,
