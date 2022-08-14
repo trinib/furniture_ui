@@ -9,15 +9,31 @@ class ShopCart extends StatefulWidget {
 }
 
 class _ShopCartState extends State<ShopCart> {
+  List picked = [false, false];
+
+  int totalAmount = 0;
+
+  pickedToggle(index) {
+    setState(() {
+      picked[index] = !picked[index];
+      getTotalAmount();
+    });
+  }
+
+  getTotalAmount() {}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
         children: [
+          ///! 🔶 🟩
           Column(
             children: [
+              ///! 🔶🟩 🟡
               Stack(
                 children: [
+                  ///! 🔶🟩🟡 💙
                   Container(
                     height: 250,
                     width: double.infinity,
@@ -47,6 +63,8 @@ class _ShopCartState extends State<ShopCart> {
                       ),
                     ),
                   ),
+
+                  ///! 🔶🟩🟡 🟩
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -54,6 +72,8 @@ class _ShopCartState extends State<ShopCart> {
                         width: 15,
                         height: 10,
                       ),
+
+                      ///! 🔶🟩🟡🟩 💙
                       Container(
                         alignment: Alignment.topLeft,
                         child: IconButton(
@@ -70,6 +90,8 @@ class _ShopCartState extends State<ShopCart> {
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 10),
+
+                        ///! 🔶🟩🟡🟩 ⚪
                         child: Text(
                           'Shopping Cart',
                           style: TextStyle(
@@ -87,7 +109,9 @@ class _ShopCartState extends State<ShopCart> {
     );
   }
 
+  ////? Function////
   Widget itemCard(itemName, color, price, imgPath, available, i) {
+    ////+ INKWELL
     return InkWell(
       onTap: () {},
       child: Padding(
@@ -102,6 +126,37 @@ class _ShopCartState extends State<ShopCart> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
+            ),
+            child: Row(
+              children: [
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      height: 25,
+                      width: 25,
+                      decoration: BoxDecoration(
+                        color: available
+                            ? Colors.grey.withOpacity(0.4)
+                            : Colors.red.withOpacity(0.4),
+                        borderRadius: BorderRadius.circular(12.5),
+                      ),
+                      child: Center(
+                          child: available
+                              ? Container(
+                                  height: 12,
+                                  width: 12,
+                                  decoration: BoxDecoration(
+                                      color: picked[i]
+                                          ? Colors.yellow
+                                          : Colors.grey.withOpacity(0.4),
+                                      borderRadius: BorderRadius.circular(6)),
+                                )
+                              : Container()),
+                    )
+                  ],
+                )
+              ],
             ),
           ),
         ),
