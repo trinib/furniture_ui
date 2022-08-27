@@ -13,13 +13,17 @@ class _ShopCartState extends State<ShopCart> {
 
   int totalAmount = 0;
 
+  ///+ a function to choose element(index) in a list
   pickedToggle(index) {
     setState(() {
+      ///? calling the oppsite/reverse of index
+      //// picked = not picked
       picked[index] = !picked[index];
       getTotalAmount();
     });
   }
 
+  //// get total if picked or not
   getTotalAmount() {}
 
   @override
