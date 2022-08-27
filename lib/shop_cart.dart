@@ -9,162 +9,82 @@ class ShopCart extends StatefulWidget {
 }
 
 class _ShopCartState extends State<ShopCart> {
-  List picked = [false, false];
-
-  int totalAmount = 0;
-
-  ///+ a function to choose element(index) in a list
-  pickedToggle(index) {
-    setState(() {
-      ///? calling the oppsite/reverse of index
-      //// picked = not picked
-      picked[index] = !picked[index];
-      getTotalAmount();
-    });
-  }
-
-  //// get total if picked or not picked
-  getTotalAmount() {}
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        children: [
-          ///! 🔶 🟩
-          Column(
-            children: [
-              ///! 🔶🟩 🟡
-              Stack(
-                children: [
-                  ///! 🔶🟩🟡 💙
-                  Container(
-                    height: 250,
-                    width: double.infinity,
-                    color: Color.fromARGB(255, 0, 162, 100),
-                  ),
-                  Positioned(
-                    bottom: 0,
-                    right: 200,
-                    child: Container(
-                      height: 400,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(200),
-                        color: Color.fromARGB(59, 84, 209, 163),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    bottom: 50,
-                    left: 200,
-                    child: Container(
-                      height: 400,
-                      width: 400,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(200),
-                        color: Color.fromARGB(59, 84, 209, 163),
-                      ),
-                    ),
-                  ),
-
-                  ///! 🔶🟩🟡 🟩
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(
-                        width: 15,
-                        height: 10,
-                      ),
-
-                      ///! 🔶🟩🟡🟩 💙
-                      Container(
-                        alignment: Alignment.topLeft,
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: Icon(
-                            Icons.arrow_back,
-                            size: 30,
-                          ),
-                        ),
-                      ),
-                      SizedBox(
-                        width: 15,
-                        height: 15,
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 10),
-
-                        ///! 🔶🟩🟡🟩 ⚪
-                        child: Text(
-                          'Shopping Cart',
-                          style: TextStyle(
-                              fontSize: 30, fontWeight: FontWeight.bold),
-                        ),
-                      ),
-                    ],
-                  )
-                ],
-              ),
-            ],
-          )
-        ],
-      ),
-    );
-  }
-
-  ////? Function////
-  Widget itemCard(itemName, color, price, imgPath, available, i) {
-    ////+ INKWELL
-    return InkWell(
-      onTap: () {},
-      child: Padding(
-        padding: EdgeInsets.all(10),
-        child: Material(
-          borderRadius: BorderRadius.circular(10),
-          elevation: 3,
-          child: Container(
-            padding: EdgeInsets.only(left: 15, right: 10),
-            width: MediaQuery.of(context).size.width - 20.0,
-            height: 150,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(10),
-            ),
-            child: Row(
+        body: ListView(
+      children: [
+        Column(
+          children: [
+            Stack(
               children: [
+                Container(
+                  height: 250,
+                  width: double.infinity,
+                  color: Color.fromARGB(255, 0, 162, 100),
+                ),
+                Positioned(
+                  bottom: 0,
+                  right: 200,
+                  child: Container(
+                    height: 400,
+                    width: 400,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(200),
+                      color: Color.fromARGB(59, 84, 209, 163),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  bottom: 50,
+                  left: 200,
+                  child: Container(
+                    height: 400,
+                    width: 400,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(200),
+                      color: Color.fromARGB(59, 84, 209, 163),
+                    ),
+                  ),
+                ),
                 Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    SizedBox(
+                      width: 15,
+                      height: 10,
+                    ),
                     Container(
-                      height: 25,
-                      width: 25,
-                      decoration: BoxDecoration(
-                        color: available
-                            ? Colors.grey.withOpacity(0.4)
-                            : Colors.red.withOpacity(0.4),
-                        borderRadius: BorderRadius.circular(12.5),
+                      alignment: Alignment.topLeft,
+                      child: IconButton(
+                        onPressed: () {},
+                        icon: Icon(
+                          Icons.arrow_back,
+                          size: 30,
+                        ),
                       ),
-                      child: Center(
-                          child: available
-                              ? Container(
-                                  height: 12,
-                                  width: 12,
-                                  decoration: BoxDecoration(
-                                      color: picked[i]
-                                          ? Colors.yellow
-                                          : Colors.grey.withOpacity(0.4),
-                                      borderRadius: BorderRadius.circular(6)),
-                                )
-                              : Container()),
-                    )
+                    ),
+                    SizedBox(
+                      width: 15,
+                      height: 15,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(
+                        left: 10,
+                      ),
+                      child: Text(
+                        'Shopping Cart',
+                        style: TextStyle(
+                            fontSize: 30, fontWeight: FontWeight.bold),
+                      ),
+                    ),
                   ],
                 )
               ],
             ),
-          ),
-        ),
-      ),
-    );
+          ],
+        )
+      ],
+    ));
   }
 }
