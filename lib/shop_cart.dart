@@ -23,7 +23,7 @@ class _ShopCartState extends State<ShopCart> {
     });
   }
 
-  //// get total if picked or not
+  //// get total if picked or not picked
   getTotalAmount() {}
 
   @override
