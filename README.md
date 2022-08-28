@@ -1,4 +1,7 @@
-# furniture_ui
+# Furniture UI
+
+Completion<br>
+███████████████████████████░░░░░░░░░░░░   75%
 
 <h2 align="center"><b><i>homepage</b></i></h2>
 <p align="center"><a href="https://github.com/trinib/furniture_ui/blob/main/lib/home_page.dart"><img src="https://github.com/trinib/furniture_ui/blob/main/home_page.png" width=300 height=500></a>
