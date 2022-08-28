@@ -228,15 +228,16 @@ class _StatScreenState extends State<StatScreen> {
                 SizedBox(height: 25.0),
 
                 ///! 🔶🟩🟡 🟩
-                ////+ CALLING CARD DESIGNS FUNCTION
+                ////+ CALLING CARD DETAILS FUNCTION
                 ////* CARDS
                 Column(
                   children: <Widget>[
                     ///! 🔶🟩🟡 🟩🟥
-                    //// fist 2 cards
+                    //// first 2 cards
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
+                        ///? CALLING CARD DETAIL FUNCTION AND DEFINING IT
                         cardDetails('Pending payment', 'assets/card.png', '5'),
                         cardDetails('To be shipped', 'assets/box.png', '2'),
                       ],
@@ -248,6 +249,7 @@ class _StatScreenState extends State<StatScreen> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
+                        ///? CALLING CARD DETAIL FUNCTION AND DEFINING THE PARAMETERS
                         cardDetails('To be received', 'assets/trucks.png', '8'),
                         cardDetails(
                             'Return / Replace', 'assets/returnbox.png', '0'),
@@ -261,7 +263,7 @@ class _StatScreenState extends State<StatScreen> {
           ]),
 
           ///! 🔶🟩
-          ////+ CALLING ITEM LIST FUNCTION
+          ///? CALLING ITEM LIST FUNCTION AND DEFINING THE PARAMETERS
           SizedBox(height: 15.0),
           listItem('Gift card', Colors.red, Icons.account_box),
           listItem('Bank card', Color(getColorHexFromStr('#E89300')),
@@ -349,6 +351,8 @@ class _StatScreenState extends State<StatScreen> {
             SizedBox(height: 10.0),
             Padding(
               padding: EdgeInsets.only(left: 15.0),
+
+              ///? PASSING DATA FOR "imgPath" PARAMETER
               child: Image.asset(
                 imgPath,
                 fit: BoxFit.cover,
@@ -359,6 +363,8 @@ class _StatScreenState extends State<StatScreen> {
             SizedBox(height: 2.0),
             Padding(
               padding: EdgeInsets.only(left: 15.0),
+
+              ///? PASSING DATA FOR "title" PARAMETER
               child: Text(title,
                   style: TextStyle(
                     fontFamily: 'Quicksand',

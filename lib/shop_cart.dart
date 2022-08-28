@@ -113,9 +113,9 @@ class _ShopCartState extends State<ShopCart> {
     );
   }
 
-  ////? Function////
+  ///+ A CUSTOM FUNCTION TO CREATE 'LIST DESIGNS' TO BE 'CALLED' AND DISPLAYED
   Widget itemCard(itemName, color, price, imgPath, available, i) {
-    ////+ INKWELL
+    ///? Inkwell
     return InkWell(
       onTap: () {},
       child: Padding(
@@ -140,8 +140,11 @@ class _ShopCartState extends State<ShopCart> {
                       height: 25,
                       width: 25,
                       decoration: BoxDecoration(
+                        ///? PASSING DATA FOR "AVAILABLE" PARAMETER
                         color: available
+                            //// if available
                             ? Colors.grey.withOpacity(0.4)
+                            //// if not available
                             : Colors.red.withOpacity(0.4),
                         borderRadius: BorderRadius.circular(12.5),
                       ),
