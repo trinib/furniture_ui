@@ -38,11 +38,14 @@ class _ShopCartState extends State<ShopCart> {
               Stack(
                 children: [
                   ///! 🔶🟩🟡 💙
+                  ///* TOP SQUARE
                   Container(
                     height: 250,
                     width: double.infinity,
                     color: Color.fromARGB(255, 0, 162, 100),
                   ),
+
+                  ///* FIRST CIRCLE
                   Positioned(
                     bottom: 0,
                     right: 200,
@@ -55,6 +58,8 @@ class _ShopCartState extends State<ShopCart> {
                       ),
                     ),
                   ),
+
+                  ///* SECOND CIRCLE
                   Positioned(
                     bottom: 50,
                     left: 200,
@@ -69,6 +74,7 @@ class _ShopCartState extends State<ShopCart> {
                   ),
 
                   ///! 🔶🟩🟡 🟩
+                  ///? COLUMN ARROW & TEXT
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -78,6 +84,7 @@ class _ShopCartState extends State<ShopCart> {
                       ),
 
                       ///! 🔶🟩🟡🟩 💙
+                      ///* ARROW
                       Container(
                         alignment: Alignment.topLeft,
                         child: IconButton(
@@ -96,6 +103,7 @@ class _ShopCartState extends State<ShopCart> {
                         padding: const EdgeInsets.only(left: 10),
 
                         ///! 🔶🟩🟡🟩 ⚪
+                        ///* TEXT
                         child: Text(
                           'Shopping Cart',
                           style: TextStyle(
