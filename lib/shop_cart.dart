@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 // ignore: use_key_in_widget_constructors
@@ -127,10 +129,15 @@ class _ShopCartState extends State<ShopCart> {
     return InkWell(
       onTap: () {},
       child: Padding(
+        ///* space around padding
         padding: EdgeInsets.all(10),
+
+        ///? Material widget
         child: Material(
           borderRadius: BorderRadius.circular(10),
           elevation: 3,
+
+          ///! 💙
           child: Container(
             padding: EdgeInsets.only(left: 15, right: 10),
             width: MediaQuery.of(context).size.width - 20.0,
@@ -139,34 +146,44 @@ class _ShopCartState extends State<ShopCart> {
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
             ),
+
+            ///! 💙🟥
+            ///? RADIO BUTTON
             child: Row(
               children: [
+                ///! 💙🟥🟩
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    ///! 💙🟥🟩 💙
+                    ///? PASSING DATA FOR "AVAILABLE" PARAMETER BUTTON
                     Container(
                       height: 25,
                       width: 25,
                       decoration: BoxDecoration(
-                        ///? PASSING DATA FOR "AVAILABLE" PARAMETER
                         color: available
-                            //// if available
+                            //// if available (true)
                             ? Colors.grey.withOpacity(0.4)
-                            //// if not available
+                            //// if not available (false)
                             : Colors.red.withOpacity(0.4),
                         borderRadius: BorderRadius.circular(12.5),
                       ),
                       child: Center(
                           child: available
+
+                              ///! 💙🟥🟩 💙 💙
+                              //// if available (true)
                               ? Container(
                                   height: 12,
                                   width: 12,
                                   decoration: BoxDecoration(
                                       color: picked[i]
+                                          //// if selected (true / false)
                                           ? Colors.yellow
                                           : Colors.grey.withOpacity(0.4),
                                       borderRadius: BorderRadius.circular(6)),
                                 )
+                              //// if not available (false)
                               : Container()),
                     )
                   ],
