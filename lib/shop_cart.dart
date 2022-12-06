@@ -18,7 +18,7 @@ class _ShopCartState extends State<ShopCart> {
   ///+ a function to choose element(index) in a list
   pickedToggle(index) {
     setState(() {
-      ///? calling the oppsite/reverse of index
+      ///? calling the opposite/reverse of index
       //// picked = not picked
       picked[index] = !picked[index];
       getTotalAmount();
@@ -49,11 +49,11 @@ class _ShopCartState extends State<ShopCart> {
 
                   ///* FIRST CIRCLE
                   Positioned(
-                    bottom: 0,
+                    top: 0,
                     right: 200,
                     child: Container(
-                      height: 400,
-                      width: 400,
+                      height: 300,
+                      width: 300,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(200),
                         color: Color.fromARGB(59, 84, 209, 163),
@@ -63,11 +63,11 @@ class _ShopCartState extends State<ShopCart> {
 
                   ///* SECOND CIRCLE
                   Positioned(
-                    bottom: 50,
+                    top: 50,
                     left: 200,
                     child: Container(
-                      height: 400,
-                      width: 400,
+                      height: 300,
+                      width: 300,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(200),
                         color: Color.fromARGB(59, 84, 209, 163),
@@ -76,7 +76,7 @@ class _ShopCartState extends State<ShopCart> {
                   ),
 
                   ///! 🔶🟩🟡 🟩
-                  ///? COLUMN ARROW & TEXT
+                  //// COLUMN ARROW & TEXT
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -102,7 +102,7 @@ class _ShopCartState extends State<ShopCart> {
                         height: 15,
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(left: 10),
+                        padding: EdgeInsets.only(left: 10),
 
                         ///! 🔶🟩🟡🟩 ⚪
                         ///* TEXT
@@ -112,6 +112,18 @@ class _ShopCartState extends State<ShopCart> {
                               fontSize: 30, fontWeight: FontWeight.bold),
                         ),
                       ),
+                      Padding(
+                          padding: EdgeInsets.only(top: 70),
+                          child: Column(
+                            children: [
+                              itemCard('Finn navian-Sofa', 'gray', '234',
+                                  'assets/otto5.jpg', true, 0),
+                              itemCard('Finn Navian-Sofa', 'gray', '248',
+                                  'assets/anotherchair.jpg', true, 1),
+                              itemCard('Finn Navian-Sofa', 'gray', '248',
+                                  'assets/chair.jpg', false, 2)
+                            ],
+                          ))
                     ],
                   )
                 ],
@@ -125,14 +137,14 @@ class _ShopCartState extends State<ShopCart> {
 
   ///+ A CUSTOM FUNCTION TO CREATE 'LIST DESIGNS' TO BE 'CALLED' AND DISPLAYED
   Widget itemCard(itemName, color, price, imgPath, available, i) {
-    ///? Inkwell
+    //// Inkwell
     return InkWell(
       onTap: () {},
       child: Padding(
-        ///* space around padding
+        ///? space around padding
         padding: EdgeInsets.all(10),
 
-        ///? Material widget
+        //// Material widget
         child: Material(
           borderRadius: BorderRadius.circular(10),
           elevation: 3,
@@ -145,10 +157,17 @@ class _ShopCartState extends State<ShopCart> {
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(10),
+              boxShadow: [
+                BoxShadow(
+                  color: Color.fromARGB(255, 122, 122, 122),
+                  spreadRadius: 0,
+                  blurRadius: 2,
+                ),
+              ],
             ),
 
             ///! 💙🟥
-            ///? RADIO BUTTON
+            ///* RADIO ICON BUTTON
             child: Row(
               children: [
                 ///! 💙🟥🟩
@@ -156,7 +175,7 @@ class _ShopCartState extends State<ShopCart> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     ///! 💙🟥🟩 💙
-                    ///? PASSING DATA FOR "AVAILABLE" PARAMETER BUTTON
+                    //// PASSING DATA FOR "AVAILABLE" PARAMETER BUTTON
                     Container(
                       height: 25,
                       width: 25,
@@ -170,8 +189,7 @@ class _ShopCartState extends State<ShopCart> {
                       ),
                       child: Center(
                           child: available
-
-                              ///! 💙🟥🟩 💙 💙
+                              ////! 💙🟥🟩 💙 💙
                               //// if available (true)
                               ? Container(
                                   height: 12,
@@ -187,7 +205,90 @@ class _ShopCartState extends State<ShopCart> {
                               : Container()),
                     )
                   ],
-                )
+                ),
+
+                ///* BOX BORDER WITH IMAGE
+                SizedBox(width: 10.0),
+                Container(
+                  height: 150,
+                  width: 125.0,
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage(imgPath), fit: BoxFit.contain)),
+                ),
+                SizedBox(width: 4.0),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          itemName,
+                          style: TextStyle(
+                              fontFamily: 'Montserrat',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 25),
+                        ),
+                        SizedBox(width: 7.0),
+                        available
+                            ? picked[i]
+                                ? Text(
+                                    'x1',
+                                    style: TextStyle(
+                                        fontFamily: 'Montserrat',
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 14,
+                                        color: Colors.grey),
+                                  )
+                                : Container()
+                            : Container()
+                      ],
+                    ),
+                    SizedBox(height: 7.0),
+                    available
+                        ? Text(
+                            'color: ' + color,
+                            style: TextStyle(
+                                fontFamily: 'Quicksand',
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                                color: Colors.grey),
+                          )
+                        : OutlinedButton(
+                            onPressed: () {},
+                            style: ButtonStyle(
+                              shape: MaterialStateProperty.all(
+                                  RoundedRectangleBorder(
+                                      borderRadius:
+                                          BorderRadius.circular(10.0))),
+                              side: MaterialStateProperty.all(BorderSide(
+                                color: Color.fromARGB(255, 243, 33, 33),
+                              )),
+                            ),
+                            child: Center(
+                              child: Text('Find Similar',
+                                  style: TextStyle(
+                                      fontFamily: 'Quicksand',
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18.0,
+                                      color: Colors.red)),
+                            ),
+                          ),
+                    SizedBox(height: 7.0),
+
+                    ///* PRICE
+                    available
+                        ? Text('\$' + price,
+                            style: TextStyle(
+                              fontFamily: 'Quicksand',
+                              fontWeight: FontWeight.bold,
+                              fontSize: 15.0,
+                              color: Color.fromARGB(255, 0, 162, 100),
+                            ))
+                        : Container(),
+                  ],
+                ),
               ],
             ),
           ),
